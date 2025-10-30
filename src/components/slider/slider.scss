@@ -1,0 +1,126 @@
+@use '@/styles/mixins' as *;
+
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &__swiper {
+    width: 100%;
+    height: 500px;
+    padding-bottom: 30px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px 60px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+
+  &__title {
+    @include lato(700);
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  &__description {
+    @include lato(400);
+    font-size: 20px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  // Навигационные стрелки
+  &__button-prev,
+  &__button-next {
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #fff;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 12px;
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+
+  &__button-prev {
+    left: 20px;
+  }
+
+  &__button-next {
+    right: 20px;
+  }
+
+  // Пагинация
+  &__pagination {
+    bottom: 0 !important;
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #DFDFDF;
+      transition: all 0.3s ease;
+      margin: 0 6px;
+      border-radius: 0;
+      opacity: 1;
+      margin: 0 15px !important;
+
+      &-active {
+        opacity: 1;
+        background: #6F6F6F;
+      }
+    }
+  }
+
+  &__nav {
+    @include container;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 100%;
+  }
+}
+

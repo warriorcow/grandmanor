@@ -1,0 +1,86 @@
+@use '@/styles/mixins' as *;
+
+.button {
+  @include button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  min-width: 159px;
+  
+  // Primary variant (черная кнопка)
+  &--primary {
+    background-color: #000;
+    color: #fff;
+    
+    &:hover {
+      background-color: #333;
+    }
+    
+    &:active {
+      background-color: #000;
+      transform: scale(0.98);
+    }
+  }
+  
+  // Secondary variant (белая кнопка с черной рамкой)
+  &--secondary {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    
+    &:hover {
+      background-color: #F5F5F5;
+    }
+    
+    &:active {
+      background-color: #E5E5E5;
+      transform: scale(0.98);
+    }
+  }
+  
+  // Outline variant (прозрачная кнопка с рамкой)
+  &--outline {
+    background-color: transparent;
+    color: #8B7355;
+    border: 1px solid #8B7355;
+    
+    &:hover {
+      background-color: #8B7355;
+      color: #fff;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  
+  // Disabled state
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  // Size variants
+  &--small {
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+  
+  &--large {
+    padding: 16px 56px;
+    font-size: 18px;
+  }
+  
+  // Full width
+  &--full {
+    width: 100%;
+  }
+}
+

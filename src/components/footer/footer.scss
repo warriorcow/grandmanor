@@ -1,0 +1,121 @@
+@use '@/styles/mixins' as *;
+
+.footer {
+  padding-top: 60px;
+
+  &__container {
+    @include container;
+  }
+
+  &__logo {
+    display: inline-flex;
+    padding-bottom: 62px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding-bottom: 42px;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @include h3;
+
+    margin: 0 0 24px 0;
+    color: #000;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  &__phone {
+    @include t1;
+    color: #000;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8B7355;
+    }
+  }
+
+  &__email {
+    @include t2;
+    color: #000;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #8B7355;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 16px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease;
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    a {
+      @include menu-1;
+      color: #000;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #8B7355;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  &__privacy {
+    @include button;
+    color: #8B8B8B;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__copyright {
+    @include button;
+    color: #8B8B8B;
+    margin: 0;
+  }
+}
+

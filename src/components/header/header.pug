@@ -1,0 +1,171 @@
+header.header
+    .header__top
+        .header__container
+            nav.header__nav
+                a(href="") О нас
+                a(href="") Покупателям
+                a(href="") Контакты
+                a(href="") Салоны
+
+            a(href="").header__logo
+                img(src="/images/logo.png" alt="Logo")
+
+            .header__side
+                a(href="tel:8-800-775-38-18").header__phone 8-800-775-38-18
+
+                .header__actions
+                    button
+                        svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(
+                                d="M5.19278 16.2262L13.3157 23.8568C13.6401 24.1616 13.8023 24.3139 14.0003 24.3139C14.1983 24.3139 14.3606 24.1616 14.685 23.8568L22.8079 16.2262C25.0901 14.0823 25.3672 10.5543 23.4478 8.08037L23.0869 7.61519C20.7907 4.65564 16.1816 5.15198 14.5681 8.53255C14.3402 9.01008 13.6605 9.01008 13.4325 8.53255C11.8191 5.15198 7.21 4.65563 4.9138 7.61519L4.55288 8.08037C2.63343 10.5543 2.91058 14.0823 5.19278 16.2262Z"
+                                stroke="black"
+                                stroke-width="2"
+                            )
+                    button
+                        svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(
+                                d="M4.66699 4.66663H6.60544C7.35539 4.66663 7.73037 4.66663 8.00163 4.87842C8.27289 5.09022 8.36383 5.45399 8.54572 6.18155L8.76774 7.06963C8.94599 7.7826 9.03511 8.13909 9.21424 8.41695C9.45875 8.79624 9.82434 9.08168 10.2516 9.2269C10.5646 9.33329 10.9321 9.33329 11.667 9.33329"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            )
+                            path(
+                                d="M21 19.8334H8.80939C8.43148 19.8334 8.24253 19.8334 8.10359 19.7922C7.66676 19.6629 7.37254 19.2547 7.388 18.7994C7.39292 18.6546 7.45267 18.4754 7.57218 18.1168C7.70477 17.7191 7.77106 17.5202 7.86435 17.3541C8.15263 16.8407 8.65243 16.4805 9.23059 16.3693C9.41767 16.3334 9.62732 16.3334 10.0466 16.3334H16.3333"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            )
+                            path(
+                                d="M18.5976 16.3334H11.0279C10.0502 16.3334 9.21585 15.6265 9.05513 14.6622L8.45809 11.08C8.30571 10.1657 9.01077 9.33337 9.93768 9.33337H21.7156C22.459 9.33337 22.9425 10.1157 22.6101 10.7806L20.3864 15.2278C20.0477 15.9054 19.3551 16.3334 18.5976 16.3334Z"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            )
+                            circle(cx="19.8337" cy="23.3333" r="1.16667" fill="black")
+                            circle(cx="10.4997" cy="23.3333" r="1.16667" fill="black")
+                    button
+                        svg(width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg")
+                            path(
+                                d="M23.0156 23.8549C22.4839 22.3665 21.3121 21.0512 19.6821 20.1132C18.0521 19.1751 16.0549 18.6666 14.0003 18.6666C11.9457 18.6666 9.94857 19.1751 8.31855 20.1132C6.68854 21.0512 5.51679 22.3665 4.98502 23.8549"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            )
+                            ellipse(
+                                cx="13.9997"
+                                cy="9.33329"
+                                rx="4.66667"
+                                ry="4.66667"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            )
+    //- Данные для меню
+    -
+        const menuItems = [
+            {
+                title: 'Спальня',
+                href: '#',
+                items: [
+                    { title: 'Кровати', href: '#' },
+                    { title: 'Прикроватные тумбочки', href: '#' },
+                    { title: 'Комоды', href: '#' },
+                    { title: 'Высокие комоды', href: '#' },
+                    { title: 'Туалетные столики', href: '#' },
+                    { title: 'Банкетки', href: '#' },
+                    { title: 'Шкафы', href: '#' },
+                    { title: 'Постельные комплекты и пледы', href: '#' },
+                    { title: 'Аксессуары', href: '#' }
+                ]
+            },
+            {
+                title: 'Столовая',
+                href: '#',
+                items: [
+                    { title: 'Обеденные столы', href: '#' },
+                    { title: 'Стулья и табуреты', href: '#' },
+                    { title: 'Банкетки для столовой', href: '#' },
+                    { title: 'Буфеты и серванты', href: '#' },
+                    { title: 'Барные стулья', href: '#' },
+                    { title: 'Столовые комплекты', href: '#' },
+                    { title: 'Сервировка', href: '#' }
+                ]
+            },
+            {
+                title: 'Гостиная',
+                href: '#',
+                items: [
+                    { title: 'Диваны', href: '#' },
+                    { title: 'Кресла', href: '#' },
+                    { title: 'Журнальные столы', href: '#' },
+                    { title: 'Тумбы под ТВ', href: '#' },
+                    { title: 'Комоды для гостиной', href: '#' },
+                    { title: 'Пуфы и банкетки', href: '#' },
+                    { title: 'Текстиль для гостиной', href: '#' }
+                ]
+            },
+            {
+                title: 'Домашний офис',
+                href: '#',
+                items: [
+                    { title: 'Письменные столы', href: '#' },
+                    { title: 'Офисные кресла', href: '#' },
+                    { title: 'Шкафы для офиса', href: '#' },
+                    { title: 'Полки и стеллажи', href: '#' },
+                    { title: 'Органайзеры', href: '#' }
+                ]
+            },
+            {
+                title: 'освещение и Декор',
+                href: '#',
+                items: [
+                    { title: 'Люстры', href: '#' },
+                    { title: 'Бра и настенные светильники', href: '#' },
+                    { title: 'Настольные лампы', href: '#' },
+                    { title: 'Торшеры', href: '#' },
+                    { title: 'Подсветка', href: '#' },
+                    { title: 'Декоративные элементы', href: '#' },
+                    { title: 'Зеркала', href: '#' }
+                ]
+            },
+            {
+                title: 'Коллекции',
+                href: '#',
+                items: [
+                    { title: 'Классические коллекции', href: '#' },
+                    { title: 'Современные коллекции', href: '#' },
+                    { title: 'Скандинавский стиль', href: '#' },
+                    { title: 'Лофт', href: '#' },
+                    { title: 'Минимализм', href: '#' }
+                ]
+            },
+            {
+                title: 'Бренды',
+                href: '#',
+                items: [
+                    { title: 'Все бренды', href: '#' },
+                    { title: 'Премиум сегмент', href: '#' },
+                    { title: 'Средний сегмент', href: '#' },
+                    { title: 'Эконом сегмент', href: '#' }
+                ]
+            }
+        ]
+
+    //- Миксин для пункта меню с выпадающим списком
+    mixin menuItem(item)
+        .header__menu-item
+            a(href=item.href).header__menu-link= item.title
+            if item.items && item.items.length > 0
+                .header__dropdown
+                    each subItem in item.items
+                        a(href=subItem.href).header__dropdown-link= subItem.title
+
+    .header__bottom
+        .header__container
+            nav.header__menu
+                each menuItem in menuItems
+                    +menuItem(menuItem)
+            .header__inner
+                include ../search/search
+                +button('Заказать звонок', { variant: 'primary' }).header__callback-button

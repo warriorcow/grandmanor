@@ -1,0 +1,104 @@
+// === Fonts ===
+// Tenor Sans
+@mixin tenor($weight: 400) {
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+// Lato
+@mixin lato($weight: 400) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $weight;
+  font-style: normal;
+}
+
+// === Buttons ===
+@mixin button {
+  @include lato(400);
+  font-size: 16px;
+  line-height: 100%;
+}
+
+// === Menu ===
+@mixin menu-1 {
+  @include lato(400);
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+@mixin menu-2 {
+  @include lato(400);
+  font-size: 24px;
+  line-height: 100%;
+}
+
+// === Headings ===
+@mixin h1 {
+  @include tenor();
+  font-size: 48px;
+  line-height: 100%;
+}
+
+@mixin h2 {
+  @include tenor();
+  font-size: 36px;
+  line-height: 100%;
+}
+
+@mixin h3 {
+  @include tenor();
+  font-size: 30px;
+  line-height: 100%;
+}
+
+@mixin h4 {
+  @include lato(400);
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+@mixin h5 {
+  @include tenor();
+  font-size: 20px;
+  line-height: 100%;
+}
+
+@mixin h6 {
+  @include tenor();
+  font-size: 16px;
+  line-height: 100%;
+}
+
+@mixin h7 {
+  @include tenor();
+  font-size: 12px;
+  line-height: 100%;
+}
+
+// === Text ===
+@mixin t1 {
+  @include lato(400);
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@mixin t2 {
+  @include lato(500);
+  font-size: 20px;
+  line-height: 100%;
+}
+
+@mixin t3 {
+  @include lato(400);
+  font-size: 12px;
+  line-height: 100%;
+}
+
+@mixin container {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

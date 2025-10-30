@@ -1,0 +1,20 @@
+mixin button(text, options = {}, attributes = {})
+    - const href = options.href || null
+    - const type = options.type || 'button'
+    - const variant = options.variant || 'primary'
+    - const className = options.className || ''
+    - const ariaLabel = options.ariaLabel || text
+
+    if href
+        a.button(
+            class=`button--${variant} ${className}`
+            href=href
+            aria-label=ariaLabel
+        )&attributes(attributes)= text
+    else
+        button.button(
+            class=`button--${variant} ${className}`
+            type=type
+            aria-label=ariaLabel
+        )&attributes(attributes)= text
+
