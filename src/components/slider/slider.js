@@ -13,7 +13,7 @@ function initSlider() {
     modules: [Navigation, Pagination, Autoplay],
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 4000,
       disableOnInteraction: false,
     },
     speed: 800,

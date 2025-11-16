@@ -1,0 +1,29 @@
+@use '@/styles/mixins' as *;
+
+.seo-text {
+  @include container;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__title {
+    @include h1;
+
+    @include mobile {
+      @include h3;
+    }
+  }
+
+  &__text {
+    @include menu-2;
+
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px;
+
+    @include mobile {
+      @include button;
+    }
+  }
+}

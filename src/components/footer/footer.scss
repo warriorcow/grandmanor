@@ -3,20 +3,44 @@
 .footer {
   padding-top: 60px;
 
+  @include mobile {
+    padding-top: 0;
+  }
+
   &__container {
     @include container;
   }
 
   &__logo {
     display: inline-flex;
-    padding-bottom: 62px;
+    margin-bottom: 62px;
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+
+    img {
+      @include mobile {
+        height: 45px;
+      }
+    }
   }
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     gap: 60px;
     padding-bottom: 42px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding-bottom: 20px;
+    }
   }
 
   &__column {
@@ -29,33 +53,47 @@
 
     margin: 0 0 24px 0;
     color: #000;
+
+    @include mobile {
+      margin: 0 0 20px 0;
+    }
   }
 
   &__contacts {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 40px;
+
+    @include mobile {
+      gap: 15px;
+    }
   }
 
   &__phone {
     @include t1;
+
     color: #000;
     transition: color 0.3s ease;
 
+    @include mobile {
+      @include button;
+    }
+
     &:hover {
-      color: #8B7355;
+      color: #6F6F6F;
     }
   }
 
   &__email {
     @include t2;
+
+    display: inline-flex;
     color: #000;
     margin-bottom: 40px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #8B7355;
+      color: #6F6F6F;
     }
   }
 
@@ -88,7 +126,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        color: #8B7355;
+        color: #6F6F6F;
       }
     }
   }
@@ -100,12 +138,21 @@
 
   &__privacy {
     @include button;
-    color: #8B8B8B;
+
+    color: #6F6F6F;
     display: block;
     margin-bottom: 20px;
     text-decoration: underline;
     text-underline-offset: 4px;
     transition: color 0.3s ease;
+
+    @include mobile {
+      @include t3;
+
+      max-width: 240px;
+      margin: 0 auto 20px;
+      text-underline-offset: 1px;
+    }
 
     &:hover {
       color: #000;
@@ -114,8 +161,39 @@
 
   &__copyright {
     @include button;
-    color: #8B8B8B;
+
+    color: #6F6F6F;
     margin: 0;
+
+    @include mobile {
+      @include t3;
+
+      max-width: 270px;
+      margin: 0 auto;
+    }
+  }
+
+  &__additional-contacts {
+    margin-top: 40px;
+
+    @include tablet {
+      display: none;
+    }
+
+    &--mobile {
+      margin-top: 0;
+      display: none;
+
+      @include tablet {
+        display: block;
+        grid-column: span 2;
+      }
+
+      @include mobile {
+        display: block;
+        grid-column: auto;
+      }
+    }
   }
 }
 

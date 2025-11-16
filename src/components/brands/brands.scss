@@ -1,0 +1,54 @@
+@use '@/styles/mixins' as *;
+
+.brands {
+  &__title {
+    @include h1;
+
+    @include tablet {
+      @include h3;
+    }
+  }
+
+  &__row {
+    @include container;
+  }
+
+  &__logos {
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    margin-top: 35px;
+
+    @include mobile {
+      border: none;
+    }
+  }
+
+  &__logos-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include mobile {
+      gap: 20px 55px;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    padding: 33px 29.5px;
+
+    @include mobile {
+      padding: 14px 10px;
+      margin: 0 auto;
+    }
+
+    img {
+      object-fit: contain;
+
+      @include mobile {
+        width: 120px;
+        height: 34px;
+      }
+    }
+  }
+}

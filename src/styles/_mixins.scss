@@ -17,7 +17,7 @@
 @mixin button {
   @include lato(400);
   font-size: 16px;
-  line-height: 100%;
+  line-height: 19px;
 }
 
 // === Menu ===
@@ -63,7 +63,7 @@
 @mixin h5 {
   @include tenor();
   font-size: 20px;
-  line-height: 100%;
+  line-height: 23px;
 }
 
 @mixin h6 {
@@ -75,7 +75,7 @@
 @mixin h7 {
   @include tenor();
   font-size: 12px;
-  line-height: 100%;
+  line-height: 14px;
 }
 
 // === Text ===
@@ -97,8 +97,29 @@
   line-height: 100%;
 }
 
+@mixin tablet() {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 @mixin container {
   max-width: 1280px;
+  width: 100%;
   padding: 0 10px;
   margin: 0 auto;
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
 }

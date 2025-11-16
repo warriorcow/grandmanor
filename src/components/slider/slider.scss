@@ -9,6 +9,11 @@
     width: 100%;
     height: 500px;
     padding-bottom: 30px;
+
+    @include tablet {
+      height: 356px;
+      padding-bottom: 26px;
+    }
   }
 
   &__wrapper {
@@ -64,31 +69,40 @@
     line-height: 1.5;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
-
-  // Навигационные стрелки
+  
   &__button-prev,
   &__button-next {
     top: 0;
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.9);
     color: #fff;
     background: rgba(35, 35, 35, 0.5);
     backdrop-filter: blur(2px);
     padding: 12px;
+    transition: 0.2s ease;
+
+    @include tablet {
+      width: 30px;
+      height: 30px;
+      padding: 7px 11px;
+    }
 
     &.swiper-button-disabled {
       opacity: 0.3;
       cursor: not-allowed;
     }
+
+    &:hover {
+      color: #8D8D8D;
+    }
   }
 
   &__button-prev {
-    left: 20px;
+    left: 20px !important;
   }
 
   &__button-next {
-    right: 20px;
+    right: 20px !important;
   }
 
   // Пагинация
@@ -100,10 +114,15 @@
       height: 10px;
       background: #DFDFDF;
       transition: all 0.3s ease;
-      margin: 0 6px;
       border-radius: 0;
       opacity: 1;
       margin: 0 15px !important;
+
+      @include tablet {
+        width: 6px;
+        height: 6px;
+        margin: 0 7.5px !important;
+      }
 
       &-active {
         opacity: 1;

@@ -1,0 +1,29 @@
+@use '@/styles/mixins' as *;
+
+.tabbar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid #6F6F6F;
+  padding: 9px 20px 10px;
+
+  @include mobile {
+    display: block;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+}
