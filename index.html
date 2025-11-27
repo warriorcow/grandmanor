@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pug + SCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-B6l5ajH2.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BTWRpKhG.css">
+  </head>
+  <body>
+    
+<header class="header">
+  <div class="header__top">
+    <div class="header__container">
+      <nav class="header__nav"><a href="">О нас</a><a href="">Покупателям</a><a href="">Контакты</a><a href="">Салоны</a></nav><a class="header__logo" href=""><img src="./images/logo.png" alt="Logo"/></a>
+      <div class="header__side"><a class="header__phone" href="tel:8-800-775-38-18">8-800-775-38-18</a>
+        <div class="header__actions">
+          <button>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.19278 16.2262L13.3157 23.8568C13.6401 24.1616 13.8023 24.3139 14.0003 24.3139C14.1983 24.3139 14.3606 24.1616 14.685 23.8568L22.8079 16.2262C25.0901 14.0823 25.3672 10.5543 23.4478 8.08037L23.0869 7.61519C20.7907 4.65564 16.1816 5.15198 14.5681 8.53255C14.3402 9.01008 13.6605 9.01008 13.4325 8.53255C11.8191 5.15198 7.21 4.65563 4.9138 7.61519L4.55288 8.08037C2.63343 10.5543 2.91058 14.0823 5.19278 16.2262Z" stroke="black" stroke-width="2"></path>
+            </svg>
+          </button>
+          <button>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.66699 4.66663H6.60544C7.35539 4.66663 7.73037 4.66663 8.00163 4.87842C8.27289 5.09022 8.36383 5.45399 8.54572 6.18155L8.76774 7.06963C8.94599 7.7826 9.03511 8.13909 9.21424 8.41695C9.45875 8.79624 9.82434 9.08168 10.2516 9.2269C10.5646 9.33329 10.9321 9.33329 11.667 9.33329" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M21 19.8334H8.80939C8.43148 19.8334 8.24253 19.8334 8.10359 19.7922C7.66676 19.6629 7.37254 19.2547 7.388 18.7994C7.39292 18.6546 7.45267 18.4754 7.57218 18.1168C7.70477 17.7191 7.77106 17.5202 7.86435 17.3541C8.15263 16.8407 8.65243 16.4805 9.23059 16.3693C9.41767 16.3334 9.62732 16.3334 10.0466 16.3334H16.3333" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M18.5976 16.3334H11.0279C10.0502 16.3334 9.21585 15.6265 9.05513 14.6622L8.45809 11.08C8.30571 10.1657 9.01077 9.33337 9.93768 9.33337H21.7156C22.459 9.33337 22.9425 10.1157 22.6101 10.7806L20.3864 15.2278C20.0477 15.9054 19.3551 16.3334 18.5976 16.3334Z" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+              <circle cx="19.8337" cy="23.3333" r="1.16667" fill="black"></circle>
+              <circle cx="10.4997" cy="23.3333" r="1.16667" fill="black"></circle>
+            </svg>
+          </button>
+          <button>
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.0156 23.8549C22.4839 22.3665 21.3121 21.0512 19.6821 20.1132C18.0521 19.1751 16.0549 18.6666 14.0003 18.6666C11.9457 18.6666 9.94857 19.1751 8.31855 20.1132C6.68854 21.0512 5.51679 22.3665 4.98502 23.8549" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+              <ellipse cx="13.9997" cy="9.33329" rx="4.66667" ry="4.66667" stroke="black" stroke-width="2" stroke-linecap="round"></ellipse>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__container">
+      <nav class="header__menu">
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Спальня</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Кровати</a><a class="header__dropdown-link" href="#">Прикроватные тумбочки</a><a class="header__dropdown-link" href="#">Комоды</a><a class="header__dropdown-link" href="#">Высокие комоды</a><a class="header__dropdown-link" href="#">Туалетные столики</a><a class="header__dropdown-link" href="#">Банкетки</a><a class="header__dropdown-link" href="#">Шкафы</a><a class="header__dropdown-link" href="#">Постельные комплекты и пледы</a><a class="header__dropdown-link" href="#">Аксессуары</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Столовая</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Обеденные столы</a><a class="header__dropdown-link" href="#">Стулья и табуреты</a><a class="header__dropdown-link" href="#">Банкетки для столовой</a><a class="header__dropdown-link" href="#">Буфеты и серванты</a><a class="header__dropdown-link" href="#">Барные стулья</a><a class="header__dropdown-link" href="#">Столовые комплекты</a><a class="header__dropdown-link" href="#">Сервировка</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Гостиная</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Диваны</a><a class="header__dropdown-link" href="#">Кресла</a><a class="header__dropdown-link" href="#">Журнальные столы</a><a class="header__dropdown-link" href="#">Тумбы под ТВ</a><a class="header__dropdown-link" href="#">Комоды для гостиной</a><a class="header__dropdown-link" href="#">Пуфы и банкетки</a><a class="header__dropdown-link" href="#">Текстиль для гостиной</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Домашний офис</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Письменные столы</a><a class="header__dropdown-link" href="#">Офисные кресла</a><a class="header__dropdown-link" href="#">Шкафы для офиса</a><a class="header__dropdown-link" href="#">Полки и стеллажи</a><a class="header__dropdown-link" href="#">Органайзеры</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">освещение и Декор</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Люстры</a><a class="header__dropdown-link" href="#">Бра и настенные светильники</a><a class="header__dropdown-link" href="#">Настольные лампы</a><a class="header__dropdown-link" href="#">Торшеры</a><a class="header__dropdown-link" href="#">Подсветка</a><a class="header__dropdown-link" href="#">Декоративные элементы</a><a class="header__dropdown-link" href="#">Зеркала</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Коллекции</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Классические коллекции</a><a class="header__dropdown-link" href="#">Современные коллекции</a><a class="header__dropdown-link" href="#">Скандинавский стиль</a><a class="header__dropdown-link" href="#">Лофт</a><a class="header__dropdown-link" href="#">Минимализм</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Бренды</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Все бренды</a><a class="header__dropdown-link" href="#">Премиум сегмент</a><a class="header__dropdown-link" href="#">Средний сегмент</a><a class="header__dropdown-link" href="#">Эконом сегмент</a>
+            </div>
+          </div>
+      </nav>
+      <div class="header__inner">
+        <div class="search">
+          <label class="search__wrapper">
+            <div class="search__icon" aria-label="Поиск">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 14.5L11.1221 11.1221M11.1221 11.1221C11.6999 10.5444 12.1583 9.85841 12.471 9.10349C12.7837 8.34856 12.9446 7.53944 12.9446 6.72231C12.9446 5.90519 12.7837 5.09606 12.471 4.34114C12.1583 3.58621 11.6999 2.90027 11.1221 2.32247C10.5444 1.74468 9.85841 1.28635 9.10349 0.973645C8.34856 0.660945 7.53944 0.5 6.72231 0.5C5.90519 0.5 5.09606 0.660945 4.34114 0.973645C3.58621 1.28635 2.90027 1.74468 2.32247 2.32247C1.15556 3.48938 0.5 5.07205 0.5 6.72231C0.5 8.37257 1.15556 9.95524 2.32247 11.1221C3.48938 12.2891 5.07205 12.9446 6.72231 12.9446C8.37257 12.9446 9.95524 12.2891 11.1221 11.1221Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+            <input class="search__input" type="text" placeholder="Поиск"/>
+          </label>
+          <div class="search__dropdown">
+            <div class="search__results">
+              <h3 class="search__results-title">Товары:</h3><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-1.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-2.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-3.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__view-all" href="#">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <button class="button button--primary  header__callback-button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+<header class="header-mobile">
+  <div class="header-mobile__wrapper">
+    <button class="header-mobile__menu-button"><span class="header-mobile__menu-button-line"></span></button><a class="header-mobile__logo" href="#"><img src="./images/logo.png" alt="Logo"/></a><a class="header-mobile__phone" href="tel:8-800-775-38-18">
+      <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.486 0.5C6.72613 0.500003 6.96189 0.564268 7.16881 0.686124C7.37573 0.80798 7.54627 0.982989 7.66274 1.19299L9.30842 4.15737C9.41453 4.34859 9.47244 4.56279 9.47713 4.78143C9.48182 5.00007 9.43315 5.21656 9.33533 5.41216L7.7502 8.58376C7.7502 8.58376 8.20973 10.946 10.1326 12.8695C12.0562 14.7924 14.4103 15.2445 14.4103 15.2445L17.5812 13.6587C17.7769 13.5608 17.9935 13.5121 18.2123 13.5168C18.4311 13.5214 18.6454 13.5794 18.8367 13.6856L21.8105 15.3394C22.02 15.4561 22.1946 15.6266 22.316 15.8334C22.4375 16.0402 22.5015 16.2756 22.5015 16.5155V19.9286C22.5015 21.6671 20.8867 22.9226 19.2397 22.3669C15.8568 21.2251 10.6056 19.0519 7.27722 15.7236C3.94952 12.3952 1.77569 7.14463 0.634608 3.76109C0.0788701 2.11473 1.33433 0.5 3.07286 0.5H6.486Z" stroke="black" stroke-linejoin="round"></path>
+      </svg></a>
+  </div>
+  <nav class="header-mobile__menu">
+    <div class="header-mobile__menu-categories">
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button">
+            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1322_984)">
+                <path d="M1 1L8 8L15 1" stroke="#6F6F6F"></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1322_984">
+                  <rect width="16" height="9" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-mobile__actions"><a class="header-mobile__action" href="#">О нас</a><a class="header-mobile__action" href="#">Покупателям</a><a class="header-mobile__action" href="#">Контакты</a><a class="header-mobile__action" href="#">Салоны</a></div>
+    <div class="header-mobile__footer">
+      <button class="button button--secondary  header-mobile__callback-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+    </div>
+  </nav>
+</header>
+<div class="tabbar">
+  <div class="tabbar__actions">
+    <button class="tabbar__action" id="search-tabbar-open">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.6665 31L25.5997 25.9332M25.5997 25.9332C26.4664 25.0665 27.1539 24.0376 27.623 22.9052C28.092 21.7728 28.3334 20.5592 28.3334 19.3335C28.3334 18.1078 28.092 16.8941 27.623 15.7617C27.1539 14.6293 26.4664 13.6004 25.5997 12.7337C24.733 11.867 23.7041 11.1795 22.5717 10.7105C21.4393 10.2414 20.2257 10 19 10C17.7743 10 16.5606 10.2414 15.4282 10.7105C14.2958 11.1795 13.2669 11.867 12.4002 12.7337C10.6498 14.4841 9.6665 16.8581 9.6665 19.3335C9.6665 21.8089 10.6498 24.1829 12.4002 25.9332C14.1506 27.6836 16.5246 28.6669 19 28.6669C21.4754 28.6669 23.8494 27.6836 25.5997 25.9332Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <button class="tabbar__action">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.94197 22.9925L19.3329 31.4025C19.6502 31.6867 19.8088 31.8288 20 31.8288C20.1912 31.8288 20.3498 31.6867 20.6671 31.4025L30.058 22.9925C32.8244 20.5151 33.1565 16.3015 30.8124 13.4213L30.5675 13.1203C27.8495 9.78056 22.5906 10.3586 20.663 14.209C20.3896 14.7551 19.6104 14.7551 19.337 14.209C17.4094 10.3586 12.1505 9.78055 9.43249 13.1203L9.18756 13.4212C6.84352 16.3015 7.17564 20.5151 9.94197 22.9925Z" stroke="black"></path>
+      </svg>
+    </button>
+    <button class="tabbar__action">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.3335 8.66602H11.892C12.5877 8.66602 12.9356 8.66602 13.1974 8.85477C13.4593 9.04353 13.5693 9.37354 13.7893 10.0336L14.0885 10.9309C14.5285 12.251 14.7485 12.911 15.2723 13.2885C15.796 13.666 16.4918 13.666 17.8832 13.666H18.3335" stroke="black" stroke-linecap="round"></path>
+        <path d="M29.3335 27.666H14.7583C13.7536 27.666 13.2513 27.666 12.9604 27.3843C12.8866 27.3127 12.8242 27.2302 12.7754 27.1396C12.5837 26.783 12.7206 26.2997 12.9945 25.333C13.324 24.1703 13.4887 23.5889 13.8912 23.2099C13.9961 23.1111 14.1114 23.024 14.235 22.95C14.7093 22.666 15.3136 22.666 16.5221 22.666H23.6668" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M26.6985 22.666H16.4964C15.5156 22.666 14.6795 21.9547 14.5223 20.9866L13.6161 15.4065C13.468 14.494 14.1724 13.666 15.0967 13.666H30.734C31.4728 13.666 31.9566 14.4397 31.6329 15.104L28.4965 21.542C28.1615 22.2297 27.4635 22.666 26.6985 22.666Z" stroke="black" stroke-linecap="round"></path>
+        <circle cx="26" cy="31" r="1" fill="black"></circle>
+        <circle cx="16" cy="31" r="1" fill="black"></circle>
+      </svg>
+    </button>
+    <button class="tabbar__action">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20.667" cy="14.334" r="5" stroke="black" stroke-linecap="round"></circle>
+        <path d="M30.3263 31.1517C29.7565 29.7695 28.5011 28.5482 26.7546 27.6772C25.0082 26.8061 22.8683 26.334 20.667 26.334C18.4657 26.334 16.3258 26.8061 14.5794 27.6772C12.8329 28.5482 11.5775 29.7695 11.0077 31.1517" stroke="black" stroke-linecap="round"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+<div class="main-page-wrapper">
+  <section class="slider">
+    <div class="swiper slider__swiper">
+      <div class="swiper-wrapper slider__wrapper">
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><img class="slider__image" src="./images/slider-1.png" alt="Гостиная"/></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><img class="slider__image" src="./images/slider-1.png" alt="Спальня"/></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><img class="slider__image" src="./images/slider-1.png" alt="Столовая"/></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><img class="slider__image" src="./images/slider-1.png" alt="Кабинет"/></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><img class="slider__image" src="./images/slider-1.png" alt="Декор"/></div>
+        </div>
+      </div>
+      <!-- Навигационные стрелки-->
+      <div class="slider__nav">
+        <div class="swiper-button-prev slider__button-prev"></div>
+        <div class="swiper-button-next slider__button-next"></div>
+      </div>
+      <!-- Пагинация-->
+      <div class="swiper-pagination slider__pagination"></div>
+    </div>
+  </section>
+  <div class="main-category">
+    <div class="main-category__item">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div>
+    </div>
+    <div class="main-category__item">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div>
+    </div>
+    <div class="main-category__item">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div>
+    </div>
+  </div>
+  <div class="main-catalog">
+    <div class="main-catalog__item">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div>
+    </div>
+    <div class="main-catalog__item">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div>
+    </div>
+    <div class="main-catalog__item">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div>
+    </div>
+    <div class="main-catalog__item">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div>
+    </div>
+  </div>
+  <div class="promotion">
+    <div class="promotion__video">
+      <div class="promotion__cover"><img src="./images/slider-1.png" alt="Видео"/>
+        <button class="promotion__play-button">▶</button>
+      </div>
+      <iframe class="promotion__iframe" src="https://www.youtube.com/embed/hLQl3WQQoQ0?si=pdgaH3bCdZECSu2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <div class="promotion__content">
+      <div class="promotion__title">Секретная<br/>скидка</div>
+      <div class="promotion__subtitle">Дарим особые условия на&nbsp;покупку</div>
+      <button class="button button--primary  promotion__button" type="button" aria-label="Узнать подробнее">Узнать подробнее</button>
+    </div>
+  </div>
+  <div class="brands">
+    <div class="brands__row">
+      <h2 class="brands__title">Наши бренды</h2>
+    </div>
+    <div class="brands__logos">
+      <div class="brands__row">
+        <div class="brands__logos-wrap">
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+          <div class="brands__logo"><img src="./images/brand.png" alt="Logo"/></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seo-text">
+    <h2 class="seo-text__title">Интернет-магазин<br/>Американской мебели</h2>
+    <div class="seo-text__text">Интернет-магазин «Grand Manor», предлагает вниманию покупателей купить элитную премиум мебель из цельного дерева (массива). На сегодняшний день для наших клиентов доступны многие мебельные бренды из Америки. Наша компания, которая находится в Москве, может доставить любой американский мебельный бренд, поэтому продукция в каталоге обновляется.</div>
+  </div>
+  <footer class="footer">
+    <div class="footer__container"><a class="footer__logo" href=""> <img src="./images/logo.png" alt="Logo"/></a>
+      <div class="footer__content">
+        <div class="footer__column">
+          <h3 class="footer__title">Контакты</h3>
+          <div class="footer__contacts"><a class="footer__phone" href="tel:88007753818">8 (800) 775-38-18 - Колл-центр</a><a class="footer__phone" href="tel:84951820105">8 (495) 182-01-05 - ЦДиИ Экспострой</a><a class="footer__phone" href="tel:84951820006">8 (495) 182-00-06  - МТК Гранд</a><a class="footer__phone" href="tel:84951822722">8 (495) 182-27-22 - ТК Три Кита</a></div>
+          <div class="footer__additional-contacts"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+            <div class="footer__social"><a href="#" aria-label="Telegram">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4104 0.14611C22.7178 0.0167374 23.0542 -0.0278823 23.3847 0.0168944C23.7152 0.0616711 24.0276 0.194208 24.2895 0.400709C24.5514 0.60721 24.7531 0.880127 24.8737 1.19105C24.9943 1.50198 25.0294 1.83955 24.9753 2.16862L22.1542 19.2804C21.8805 20.931 20.0695 21.8775 18.5557 21.0553C17.2895 20.3675 15.4088 19.3077 13.7171 18.2019C12.8713 17.6484 10.2803 15.8759 10.5988 14.6147C10.8724 13.5362 15.2259 9.48374 17.7136 7.07439C18.6901 6.12782 18.2448 5.58176 17.0917 6.45246C14.2283 8.61429 9.63104 11.9018 8.11105 12.8272C6.77017 13.6432 6.07112 13.7825 5.23525 13.6432C3.71028 13.3895 2.29602 12.9964 1.14172 12.5175C-0.418075 11.8707 -0.3422 9.72629 1.14048 9.10188L22.4104 0.14611Z" fill="#8D8D8D"></path>
+                </svg></a><a href="#" aria-label="VKontakte">
+                <svg width="35" height="21" viewBox="0 0 35 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M33.34 20.6341H29.5367C28.0983 20.6341 27.665 19.4691 25.0867 16.8891C22.8333 14.7174 21.8817 14.4474 21.3117 14.4474C20.5233 14.4474 20.3083 14.6641 20.3083 15.7491V19.1691C20.3083 20.0941 20.0083 20.6358 17.5917 20.6358C15.2472 20.4783 12.9736 19.766 10.9583 18.5577C8.94296 17.3494 7.24354 15.6795 6 13.6858C3.04836 10.0101 0.994014 5.69717 0 1.0891C0 0.519097 0.216667 0.00243047 1.30333 0.00243047H5.10333C6.08 0.00243047 6.43167 0.437431 6.815 1.44243C8.66 6.87243 11.8083 11.5958 13.0867 11.5958C13.5767 11.5958 13.79 11.3791 13.79 10.1574V4.5641C13.6283 2.01243 12.2733 1.79743 12.2733 0.874098C12.2905 0.630499 12.4019 0.403178 12.584 0.240419C12.766 0.0776601 13.0043 -0.0077142 13.2483 0.00243047H19.2217C20.0383 0.00243047 20.3083 0.409097 20.3083 1.38576V8.93576C20.3083 9.75076 20.6583 10.0208 20.905 10.0208C21.395 10.0208 21.7717 9.75076 22.67 8.8541C24.5948 6.50519 26.1679 3.88895 27.34 1.08743C27.4594 0.750704 27.6859 0.462417 27.9849 0.266745C28.2838 0.0710739 28.6386 -0.0211882 28.995 0.00409702H32.7967C33.9367 0.00409702 34.1783 0.574098 33.9367 1.38743C32.5536 4.48459 30.8427 7.4247 28.8333 10.1574C28.4233 10.7824 28.26 11.1074 28.8333 11.8408C29.21 12.4108 30.5433 13.5241 31.4383 14.5824C32.7417 15.8824 33.8233 17.3858 34.6417 19.0324C34.9683 20.0924 34.425 20.6341 33.34 20.6341Z" fill="#8D8D8D"></path>
+                </svg></a><a href="#" aria-label="WhatsApp">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4104 0.14611C22.7178 0.0167374 23.0542 -0.0278823 23.3847 0.0168944C23.7152 0.0616711 24.0276 0.194208 24.2895 0.400709C24.5514 0.60721 24.7531 0.880127 24.8737 1.19105C24.9943 1.50198 25.0294 1.83955 24.9753 2.16862L22.1542 19.2804C21.8805 20.931 20.0695 21.8775 18.5557 21.0553C17.2895 20.3675 15.4088 19.3077 13.7171 18.2019C12.8713 17.6484 10.2803 15.8759 10.5988 14.6147C10.8724 13.5362 15.2259 9.48374 17.7136 7.07439C18.6901 6.12782 18.2448 5.58176 17.0917 6.45246C14.2283 8.61429 9.63104 11.9018 8.11105 12.8272C6.77017 13.6432 6.07112 13.7825 5.23525 13.6432C3.71028 13.3895 2.29602 12.9964 1.14172 12.5175C-0.418075 11.8707 -0.3422 9.72629 1.14048 9.10188L22.4104 0.14611Z" fill="#8D8D8D"></path>
+                </svg></a></div>
+          </div>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Каталог</h3>
+          <nav class="footer__nav"><a href="#">СПАЛЬНЯ</a><a href="#">СТОЛОВАЯ</a><a href="#">ГОСТИНАЯ</a><a href="#">ДОМАШНИЙ ОФИС</a><a href="#">ОСВЕЩЕНИЕ И ДЕКОР</a><a href="#">КОЛЛЕКЦИИ</a><a href="#">БРЕНДЫ</a></nav>
+        </div>
+        <div class="footer__column">
+          <h3 class="footer__title">Информация</h3>
+          <nav class="footer__nav"><a href="#">О НАС</a><a href="#">НАШИ САЛОНЫ</a><a href="#">МЕБЕЛЬ В НАЛИЧИИ</a></nav>
+        </div>
+        <div class="footer__additional-contacts footer__additional-contacts--mobile"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+          <div class="footer__social"><a href="#" aria-label="Telegram">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4104 0.14611C22.7178 0.0167374 23.0542 -0.0278823 23.3847 0.0168944C23.7152 0.0616711 24.0276 0.194208 24.2895 0.400709C24.5514 0.60721 24.7531 0.880127 24.8737 1.19105C24.9943 1.50198 25.0294 1.83955 24.9753 2.16862L22.1542 19.2804C21.8805 20.931 20.0695 21.8775 18.5557 21.0553C17.2895 20.3675 15.4088 19.3077 13.7171 18.2019C12.8713 17.6484 10.2803 15.8759 10.5988 14.6147C10.8724 13.5362 15.2259 9.48374 17.7136 7.07439C18.6901 6.12782 18.2448 5.58176 17.0917 6.45246C14.2283 8.61429 9.63104 11.9018 8.11105 12.8272C6.77017 13.6432 6.07112 13.7825 5.23525 13.6432C3.71028 13.3895 2.29602 12.9964 1.14172 12.5175C-0.418075 11.8707 -0.3422 9.72629 1.14048 9.10188L22.4104 0.14611Z" fill="#8D8D8D"></path>
+              </svg></a><a href="#" aria-label="VKontakte">
+              <svg width="35" height="21" viewBox="0 0 35 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.34 20.6341H29.5367C28.0983 20.6341 27.665 19.4691 25.0867 16.8891C22.8333 14.7174 21.8817 14.4474 21.3117 14.4474C20.5233 14.4474 20.3083 14.6641 20.3083 15.7491V19.1691C20.3083 20.0941 20.0083 20.6358 17.5917 20.6358C15.2472 20.4783 12.9736 19.766 10.9583 18.5577C8.94296 17.3494 7.24354 15.6795 6 13.6858C3.04836 10.0101 0.994014 5.69717 0 1.0891C0 0.519097 0.216667 0.00243047 1.30333 0.00243047H5.10333C6.08 0.00243047 6.43167 0.437431 6.815 1.44243C8.66 6.87243 11.8083 11.5958 13.0867 11.5958C13.5767 11.5958 13.79 11.3791 13.79 10.1574V4.5641C13.6283 2.01243 12.2733 1.79743 12.2733 0.874098C12.2905 0.630499 12.4019 0.403178 12.584 0.240419C12.766 0.0776601 13.0043 -0.0077142 13.2483 0.00243047H19.2217C20.0383 0.00243047 20.3083 0.409097 20.3083 1.38576V8.93576C20.3083 9.75076 20.6583 10.0208 20.905 10.0208C21.395 10.0208 21.7717 9.75076 22.67 8.8541C24.5948 6.50519 26.1679 3.88895 27.34 1.08743C27.4594 0.750704 27.6859 0.462417 27.9849 0.266745C28.2838 0.0710739 28.6386 -0.0211882 28.995 0.00409702H32.7967C33.9367 0.00409702 34.1783 0.574098 33.9367 1.38743C32.5536 4.48459 30.8427 7.4247 28.8333 10.1574C28.4233 10.7824 28.26 11.1074 28.8333 11.8408C29.21 12.4108 30.5433 13.5241 31.4383 14.5824C32.7417 15.8824 33.8233 17.3858 34.6417 19.0324C34.9683 20.0924 34.425 20.6341 33.34 20.6341Z" fill="#8D8D8D"></path>
+              </svg></a><a href="#" aria-label="WhatsApp">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4104 0.14611C22.7178 0.0167374 23.0542 -0.0278823 23.3847 0.0168944C23.7152 0.0616711 24.0276 0.194208 24.2895 0.400709C24.5514 0.60721 24.7531 0.880127 24.8737 1.19105C24.9943 1.50198 25.0294 1.83955 24.9753 2.16862L22.1542 19.2804C21.8805 20.931 20.0695 21.8775 18.5557 21.0553C17.2895 20.3675 15.4088 19.3077 13.7171 18.2019C12.8713 17.6484 10.2803 15.8759 10.5988 14.6147C10.8724 13.5362 15.2259 9.48374 17.7136 7.07439C18.6901 6.12782 18.2448 5.58176 17.0917 6.45246C14.2283 8.61429 9.63104 11.9018 8.11105 12.8272C6.77017 13.6432 6.07112 13.7825 5.23525 13.6432C3.71028 13.3895 2.29602 12.9964 1.14172 12.5175C-0.418075 11.8707 -0.3422 9.72629 1.14048 9.10188L22.4104 0.14611Z" fill="#8D8D8D"></path>
+              </svg></a></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><a class="footer__privacy" href="#">Политика конфиденциальности и обработки персональных данных.</a>
+        <p class="footer__copyright">2025 © grandmanor.ru - Интернет магазин американской мебели. Все права защищены.</p>
+      </div>
+    </div>
+    <div class="search-mobile">
+      <div class="search-mobile__header">
+        <label class="search-mobile__input-wrapper">
+          <input class="search-mobile__input" type="text" placeholder="Введите запрос"/>
+          <button class="search-mobile__icon" aria-label="Поиск">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 14.5L11.1221 11.1221M11.1221 11.1221C11.6999 10.5444 12.1583 9.85841 12.471 9.10349C12.7837 8.34856 12.9446 7.53944 12.9446 6.72231C12.9446 5.90519 12.7837 5.09606 12.471 4.34114C12.1583 3.58621 11.6999 2.90027 11.1221 2.32247C10.5444 1.74468 9.85841 1.28635 9.10349 0.973645C8.34856 0.660945 7.53944 0.5 6.72231 0.5C5.90519 0.5 5.09606 0.660945 4.34114 0.973645C3.58621 1.28635 2.90027 1.74468 2.32247 2.32247C1.15556 3.48938 0.5 5.07205 0.5 6.72231C0.5 8.37257 1.15556 9.95524 2.32247 11.1221C3.48938 12.2891 5.07205 12.9446 6.72231 12.9446C8.37257 12.9446 9.95524 12.2891 11.1221 11.1221Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </label>
+        <button class="search-mobile__close" id="search-tabbar-close">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 27L16 16M27 5L16 16M16 16L5 5L27 27" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="search-mobile__results">
+        <h2 class="search-mobile__results-title">Товары:</h2>
+        <div class="search-mobile__results-items"><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a><a class="search-mobile__results-item" href="#">
+            <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+            <div class="search-mobile__results-item-info">
+              <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+              <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+            </div></a>
+        </div><a class="search-mobile__more" href="#">Смотреть все</a>
+      </div>
+    </div>
+  </footer>
+</div>
+  </body>
+</html>
