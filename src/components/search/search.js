@@ -4,31 +4,31 @@ const mockProducts = [
     id: 1,
     name: 'Комод Modern Wave',
     price: 55537,
-    image: '/images/furniture-1.jpg'
+    image: '@images/furniture-1.jpg'
   },
   {
     id: 2,
     name: 'Шкаф Classic Style',
     price: 87420,
-    image: '/images/furniture-2.jpg'
+    image: '@images/furniture-2.jpg'
   },
   {
     id: 3,
     name: 'Диван Premium Comfort',
     price: 125000,
-    image: '/images/furniture-3.jpg'
+    image: '@images/furniture-3.jpg'
   },
   {
     id: 4,
     name: 'Стол обеденный Royal',
     price: 65300,
-    image: '/images/furniture-4.jpg'
+    image: '@images/furniture-4.jpg'
   },
   {
     id: 5,
     name: 'Кресло Executive Chair',
     price: 42800,
-    image: '/images/furniture-5.jpg'
+    image: '@images/furniture-5.jpg'
   }
 ];
 
@@ -100,7 +100,7 @@ class Search {
     const itemsHTML = products.map(product => `
       <div class="search__item" data-product-id="${product.id}">
         <div class="search__item-image">
-          <img src="${product.image}" alt="${product.name}" onerror="this.src='/images/placeholder.jpg'">
+          <img src="${product.image}" alt="${product.name}" onerror="this.src='@images/placeholder.jpg'">
         </div>
         <div class="search__item-info">
           <h4 class="search__item-name">${product.name}</h4>

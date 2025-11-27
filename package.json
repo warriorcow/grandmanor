@@ -1,6 +1,6 @@
 {
-  "name": "my-pug-app",
-  "private": true,
+  "name": "grandmanor",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
