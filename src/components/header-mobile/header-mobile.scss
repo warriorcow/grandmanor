@@ -134,11 +134,11 @@
     }
   }
 
-  &__menu-category.open .header-mobile__menu-category-button svg {
+  &__menu-category.open .header-mobile__menu-category-button img {
     transform: rotate(180deg);
   }
 
-  &__menu-category-button svg {
+  &__menu-category-button img {
     transition: transform .3s ease;
   }
 

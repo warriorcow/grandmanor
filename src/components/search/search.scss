@@ -36,10 +36,10 @@
   &__icon {
     width: 24px;
     height: 24px;
-    padding: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     background: transparent;
     border: none;
     cursor: pointer;

@@ -100,7 +100,7 @@ class Search {
     const itemsHTML = products.map(product => `
       <div class="search__item" data-product-id="${product.id}">
         <div class="search__item-image">
-          <img src="${product.image}" alt="${product.name}" onerror="this.src='@images/placeholder.jpg'">
+          <img src="${product.image}" alt="${product.name}" onerror="this.src='./images/slider-1.png'">
         </div>
         <div class="search__item-info">
           <h4 class="search__item-name">${product.name}</h4>
