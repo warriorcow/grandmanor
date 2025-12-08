@@ -1,0 +1,130 @@
+@use '@/styles/mixins' as *;
+
+.product-card {
+  $this: &;
+
+  display: flex;
+  flex-direction: column;
+  //max-width: 304px;
+  padding: 19px;
+  border: 1px solid #DFDFDF;
+  gap: 30px 0;
+
+  @include tablet {
+    gap: 20px 0;
+    padding: 10px;
+  }
+
+  &__top {
+    aspect-ratio: 1 / 1;
+    max-width: 264px;
+    margin: 0 auto;
+    position: relative;
+    //height: 264px;
+  }
+
+  &__image {
+    object-fit: contain;
+  }
+
+  &__name {
+    @include t2;
+
+    @include tablet {
+      @include t3;
+    }
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    gap: 6px 10px;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-default {
+      @include h3;
+
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+
+      @include tablet {
+        @include h5;
+      }
+    }
+
+    &-old {
+      @include h6;
+
+      color: #8D8D8D;
+      display: flex;
+      align-items: center;
+      gap: 0 4px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__tags {
+    @include t3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px 0;
+    background-color: #fff;
+
+    @include tablet {
+      @include t4;
+    }
+  }
+
+  &__tag {
+    padding: 4px 8px;
+    border: 1px solid #000;
+
+    &-sale {
+      color: #38BD74;
+      border-color: #38BD74;
+    }
+
+    &-available {
+      color: #3897BD;
+      border-color: #3897BD;
+    }
+  }
+
+  &__buttons {
+
+  }
+
+  &__button {
+    $button: &;
+
+    &-favorite {
+      svg {
+        fill: none;
+        stroke: #8D8D8D;
+      }
+
+      &.active {
+        svg {
+          fill: red;
+          stroke: red;
+        }
+      }
+    }
+  }
+}
+

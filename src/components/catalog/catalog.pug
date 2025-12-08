@@ -1,0 +1,15 @@
+.catalog
+    +breadcrumbs([
+        {
+            text: 'Главная',
+            href: '/'
+        },
+        {
+            text: 'Каталог раздела',
+            href: '/',
+            active: true
+        }
+    ])
+    .catalog__wrapper
+        include ./filter/filter
+        include ./list/list

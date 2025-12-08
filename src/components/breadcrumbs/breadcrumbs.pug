@@ -1,0 +1,7 @@
+mixin breadcrumbs(items)
+    ul.breadcrumbs
+        each item, index in items
+            - var isActive = item.active || index === items.length - 1
+            li.breadcrumbs__item(class=isActive ? 'active' : '')
+                if item.href
+                    a.breadcrumbs__link(href=item.href)= item.text

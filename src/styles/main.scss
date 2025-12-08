@@ -9,6 +9,8 @@
 @use '../../src/components/search/search' as *;
 @use '../../src/components/search-mobile/search-mobile' as *;
 @use '../../src/components/button/button' as *;
+@use '../../src/components/input/input' as *;
+@use '../../src/components/checkbox/checkbox' as *;
 @use '../../src/components/slider/slider' as *;
 @use '../../src/components/main-category/main-category' as *;
 @use '../../src/components/main-catalog/main-catalog' as *;
@@ -16,6 +18,12 @@
 @use '../../src/components/brands/brands' as *;
 @use '../../src/components/seo-text/seo-text' as *;
 @use '../../src/components/tabbar/tabbar' as *;
+@use '../../src/components/breadcrumbs/breadcrumbs' as *;
+@use '../../src/components/product-card/product-card' as *;
+
+@use '../../src/components/catalog/catalog' as *;
+@use '../../src/components/catalog/filter/filter' as *;
+@use '../../src/components/catalog/list/list' as *;
 
 body {
   @include lato(400);

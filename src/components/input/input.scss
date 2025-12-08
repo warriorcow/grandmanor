@@ -1,0 +1,19 @@
+@use '@/styles/mixins' as *;
+
+.input {
+  @include button;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  -moz-appearance: textfield;
+  appearance: textfield;
+
+  border: 1px solid #DFDFDF;
+  outline: none;
+  padding: 4px 10px;
+}
+

@@ -1,0 +1,7 @@
+mixin checkbox(text, count)
+    label.checkbox()&attributes(attributes)
+        input.checkbox__input(type="checkbox")
+        .checkbox__marker(type="checkbox")
+        span.checkbox__text(class="checkbox")= text
+        if count
+            span.checkbox__count= count

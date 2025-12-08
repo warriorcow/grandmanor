@@ -4,6 +4,8 @@ function initMobileHeader() {
   const headerWrapper = document.querySelector('.header-mobile');
   const categories = document.querySelectorAll('.header-mobile__menu-category');
 
+  if (!menuBtn || !menuWrapper || !headerWrapper || !categories) return
+
   menuWrapper.style.transition = ".3s ease";
 
   menuBtn.addEventListener('click', () => {

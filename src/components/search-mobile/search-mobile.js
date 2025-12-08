@@ -3,6 +3,8 @@ function initSearchMobile() {
     const searchTabbarCloseBtn = document.querySelector('#search-tabbar-close');
     const searchMobileEl = document.querySelector('.search-mobile');
 
+    if (!searchTabbarOpenBtn || !searchTabbarCloseBtn || !searchMobileEl) return
+
     searchMobileEl.style.transition = ".3s ease";
 
     searchTabbarOpenBtn.addEventListener('click', () => {

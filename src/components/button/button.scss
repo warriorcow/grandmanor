@@ -11,8 +11,14 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  min-width: 159px;
+  min-width: 135px;
   transition: 0.2s ease;
+
+  @include tablet {
+    @include t3;
+
+    padding: 9px 16px;
+  }
   
   // Primary variant (черная кнопка)
   &--primary {

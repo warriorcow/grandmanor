@@ -1,0 +1,78 @@
+.catalog-filter
+    .catalog-filter__items
+        .catalog-filter__item
+            .catalog-filter__item-header
+                .catalog-filter__item-name Цена
+                .catalog-filter__item-btn
+                    img(src="./icons/chevron.svg")
+            .catalog-filter__item-content
+                .catalog-filter__prices
+                    .catalog-filter__price
+                        | От:
+                        +input({
+                            type: 'number',
+                            name: 'lowPrice',
+                            placeholder: '11 111'
+                        })
+                    .catalog-filter__price
+                        | До:
+                        +input({
+                            type: 'number',
+                            name: 'lowPrice',
+                            placeholder: '11 111'
+                        })
+        .catalog-filter__item
+            +checkbox('В наличии', 22)
+            +checkbox('Под заказ', 22)
+            +checkbox('Скоро в продаже', 22)
+        .catalog-filter__item
+            .catalog-filter__item-header
+                .catalog-filter__item-name Бренд
+                .catalog-filter__item-btn
+                    img(src="./icons/chevron.svg")
+            .catalog-filter__item-content
+                +checkbox('Michael Amini', 22)
+                +checkbox('Ashley Home Store', 22)
+                +checkbox('Grand Manor', 22)
+                +checkbox('Hooker Furniture', 22)
+                +checkbox('Coaster Fine Furniture', 22)
+                +checkbox('Emerald Home', 22)
+        .catalog-filter__item
+            .catalog-filter__item-header
+                .catalog-filter__item-name Стиль
+                .catalog-filter__item-btn
+                    img(src="./icons/chevron.svg")
+            .catalog-filter__item-content
+                +checkbox('Michael Amini', 22)
+                +checkbox('Ashley Home Store', 22)
+                +checkbox('Grand Manor', 22)
+                +checkbox('Hooker Furniture', 22)
+                +checkbox('Coaster Fine Furniture', 22)
+                +checkbox('Emerald Home', 22)
+        .catalog-filter__item
+            .catalog-filter__item-header
+                .catalog-filter__item-name Комната
+                .catalog-filter__item-btn
+                    img(src="./icons/chevron.svg")
+            .catalog-filter__item-content
+                +checkbox('Michael Amini', 22)
+                +checkbox('Ashley Home Store', 22)
+                +checkbox('Grand Manor', 22)
+                +checkbox('Hooker Furniture', 22)
+                +checkbox('Coaster Fine Furniture', 22)
+                +checkbox('Emerald Home', 22)
+        .catalog-filter__item
+            .catalog-filter__item-header
+                .catalog-filter__item-name Цвет
+                .catalog-filter__item-btn
+                    img(src="./icons/chevron.svg")
+            .catalog-filter__item-content
+                +checkbox('Michael Amini', 22)
+                +checkbox('Ashley Home Store', 22)
+                +checkbox('Grand Manor', 22)
+                +checkbox('Hooker Furniture', 22)
+                +checkbox('Coaster Fine Furniture', 22)
+                +checkbox('Emerald Home', 22)
+    .catalog-filter__actions
+        +button('Показать')
+        +button('Сбросить', { variant: 'secondary' })

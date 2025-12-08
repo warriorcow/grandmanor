@@ -1,0 +1,11 @@
+@use '@/styles/mixins' as *;
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    gap: 0 30px;
+  }
+}

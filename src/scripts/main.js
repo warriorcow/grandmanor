@@ -6,6 +6,7 @@ import '../components/slider/slider.js'
 import '../components/header-mobile/header-mobile.js'
 import '../components/search-mobile/search-mobile.js'
 import '../components/promotion/promotion.js'
+import '../components/catalog/filter/filter.js'
 
 // твой JS-код
 console.log('Pug + SCSS + Vite loaded')
