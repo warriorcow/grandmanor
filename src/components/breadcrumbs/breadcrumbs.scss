@@ -5,10 +5,18 @@
 
   display: flex;
 
+  @include tablet {
+    @include t3;
+  }
+
   &__item {
     &:not(:first-child)::before {
       content: '/';
       margin: 0 20px;
+
+      @include tablet {
+        margin: 0 10px;
+      }
     }
 
     &.active {

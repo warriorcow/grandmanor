@@ -1,0 +1,102 @@
+@use '@/styles/mixins' as *;
+
+.select {
+  $this: &;
+
+  @include button;
+
+  position: relative;
+
+  &__trigger {
+    padding: 7px 15px;
+    border: 1px solid #6F6F6F;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    min-width: 220px;
+
+    @include tablet {
+      border: none;
+      min-width: auto;
+      padding: 0;
+    }
+  }
+
+  &__value {
+    color: #6F6F6F;
+
+    @include tablet {
+      color: #000;
+    }
+  }
+
+  &__arrow {
+    transition: .1s ease-in-out;
+    margin-left: 20px;
+
+    @include tablet {
+      margin-left: 8px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 0;
+    right: 0;
+    border: 1px solid #6F6F6F;
+    background: white;
+    display: none;
+    z-index: 1;
+    padding: 10px 0;
+
+    @include tablet {
+      min-width: 205px;
+      left: auto;
+      top: calc(100% + 20px);
+    }
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      #{$this}__status {
+        background-color: #000;
+      }
+    }
+
+    &.selected {
+      #{$this}__status {
+        background-color: #000;
+      }
+    }
+  }
+
+  &.open {
+    .select__arrow {
+      transform: rotate(180deg);
+    }
+
+    .select__dropdown {
+      display: block;
+    }
+  }
+
+  &__status {
+    transition: 100ms ease-in-out;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,21 @@
+@use '@/styles/mixins' as *;
+
+.catalog-views {
+  display: flex;
+  gap: 0 25px;
+
+  &__item {
+    flex-shrink: 0;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+
+    svg {
+      fill: #DFDFDF;
+    }
+
+    &.active svg {
+      fill: #6F6F6F;
+    }
+  }
+}

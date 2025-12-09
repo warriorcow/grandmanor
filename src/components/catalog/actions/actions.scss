@@ -1,0 +1,18 @@
+@use '@/styles/mixins' as *;
+
+.catalog-actions {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  margin-left: auto;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.catalog-actions__item {
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+}

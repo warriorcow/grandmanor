@@ -10,6 +10,8 @@
 @use '../../src/components/search-mobile/search-mobile' as *;
 @use '../../src/components/button/button' as *;
 @use '../../src/components/input/input' as *;
+@use '../../src/components/collapse/collapse' as *;
+@use '../../src/components/select/select' as *;
 @use '../../src/components/checkbox/checkbox' as *;
 @use '../../src/components/slider/slider' as *;
 @use '../../src/components/main-category/main-category' as *;
@@ -24,12 +26,23 @@
 @use '../../src/components/catalog/catalog' as *;
 @use '../../src/components/catalog/filter/filter' as *;
 @use '../../src/components/catalog/list/list' as *;
+@use '../../src/components/catalog/views/views' as *;
+@use '../../src/components/catalog/category/category' as *;
+@use '../../src/components/catalog/category-mobile/category-mobile' as *;
+@use '../../src/components/catalog/actions/actions' as *;
+@use '../../src/components/catalog/actions-mobile/actions-mobile' as *;
+@use '../../src/components/catalog/filter-mobile/filter-mobile' as *;
+
+html {
+  overflow-x: hidden;
+}
 
 body {
   @include lato(400);
 
   margin: 0;
   padding: 0;
+
 
   * {
     margin: 0;

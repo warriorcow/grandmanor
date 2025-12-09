@@ -13,6 +13,7 @@
   cursor: pointer;
   min-width: 135px;
   transition: 0.2s ease;
+  white-space: nowrap;
 
   @include tablet {
     @include t3;

@@ -1,0 +1,12 @@
+mixin select(payload)
+    .select(data-value=payload.value || '')
+        .select__trigger
+            span.select__value= payload.placeholder || 'Выберите'
+            .select__arrow
+                img(src='./icons/chevron.svg')
+        .select__dropdown
+            each option in payload.options || []
+                .select__option(data-value=option.value)
+                    .select__status
+                    .select__label= option.label
+        input(type="hidden" name=payload.name value=payload.value)

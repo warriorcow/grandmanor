@@ -1,16 +1,18 @@
-.catalog-filter
-    .catalog-filter__items
-        +collapse("Цена", true).catalog-filter__item
-            .catalog-filter__item-content
-                .catalog-filter__prices
-                    .catalog-filter__price
+.filter-mobile
+    button.filter-mobile__button
+        img(src="./icons/filter.svg" alt="filter")
+    .filter-mobile__items
+        +collapse("Цена", true).filter-mobile__item
+            .filter-mobile__item-content
+                .filter-mobile__prices
+                    .filter-mobile__price
                         | От:
                         +input({
                             type: 'number',
                             name: 'lowPrice',
                             placeholder: '11 111'
                         })
-                    .catalog-filter__price
+                    .filter-mobile__price
                         | До:
                         +input({
                             type: 'number',
@@ -18,15 +20,15 @@
                             placeholder: '11 111'
                         })
 
-        .catalog-filter__item
-            .catalog-filter__checkboxes
+        .filter-mobile__item
+            .filter-mobile__checkboxes
                 +checkbox('В наличии', 22)
                 +checkbox('Под заказ', 22)
                 +checkbox('Скоро в продаже', 22)
 
-        +collapse("Бренд", false).catalog-filter__item
-            .catalog-filter__item-content
-                .catalog-filter__checkboxes
+        +collapse("Бренд", true).filter-mobile__item
+            .filter-mobile__item-content
+                .filter-mobile__checkboxes
                     +checkbox('Michael Amini', 22)
                     +checkbox('Ashley Home Store', 22)
                     +checkbox('Grand Manor', 22)
@@ -34,33 +36,33 @@
                     +checkbox('Coaster Fine Furniture', 22)
                     +checkbox('Emerald Home', 22)
 
-        +collapse("Стиль", false).catalog-filter__item
-            .catalog-filter__item-content
-                .catalog-filter__checkboxes
+        +collapse("Стиль", false).filter-mobile__item
+            .filter-mobile__item-content
+                .filter-mobile__checkboxes
                     +checkbox('Michael Amini', 22)
                     +checkbox('Ashley Home Store', 22)
                     +checkbox('Grand Manor', 22)
                     +checkbox('Hooker Furniture', 22)
                     +checkbox('Coaster Fine Furniture', 22)
                     +checkbox('Emerald Home', 22)
-        +collapse("Комната", false).catalog-filter__item
-            .catalog-filter__item-content
-                .catalog-filter__checkboxes
+        +collapse("Комната", false).filter-mobile__item
+            .filter-mobile__item-content
+                .filter-mobile__checkboxes
                     +checkbox('Michael Amini', 22)
                     +checkbox('Ashley Home Store', 22)
                     +checkbox('Grand Manor', 22)
                     +checkbox('Hooker Furniture', 22)
                     +checkbox('Coaster Fine Furniture', 22)
                     +checkbox('Emerald Home', 22)
-        +collapse("Цвет", false).catalog-filter__item
-            .catalog-filter__item-content
-                .catalog-filter__checkboxes
+        +collapse("Цвет", false).filter-mobile__item
+            .filter-mobile__item-content
+                .filter-mobile__checkboxes
                      +checkbox('Michael Amini', 22)
                      +checkbox('Ashley Home Store', 22)
                      +checkbox('Grand Manor', 22)
                      +checkbox('Hooker Furniture', 22)
                      +checkbox('Coaster Fine Furniture', 22)
                      +checkbox('Emerald Home', 22)
-        .catalog-filter__actions
+        .filter-mobile__actions
             +button('Показать')
             +button('Сбросить', { variant: 'secondary' })

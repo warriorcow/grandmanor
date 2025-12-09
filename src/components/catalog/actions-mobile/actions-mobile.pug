@@ -1,0 +1,29 @@
+.catalog-actions-mobile
+    include ../filter-mobile/filter-mobile
+    +select({
+        name: 'sort',
+        value: '1',
+        placeholder: 'Популярности',
+        options: [
+            {value: '1', label: 'Популярности'},
+            {value: '2', label: 'Алфавиту'},
+            {value: '3', label: 'Увеличению цены'},
+            {value: '4', label: 'Уменьшению цены'},
+        ]
+    })
+    //.catalog-actions__item
+    //    | Сортировать по:
+    //    +select({
+    //        name: 'sort',
+    //        value: '1',
+    //        placeholder: 'Популярности',
+    //        options: [
+    //            { value: '1', label: 'Популярности' },
+    //            { value: '2', label: 'Алфавиту' },
+    //            { value: '3', label: 'Увеличению цены' },
+    //            { value: '4', label: 'Уменьшению цены' },
+    //        ]
+    //    })
+    //.catalog-actions__item
+    //    | Вид каталога:
+    //    include ../views/views

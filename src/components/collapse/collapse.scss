@@ -1,0 +1,45 @@
+@use '@/styles/mixins' as *;
+
+.collapse {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: color 200ms ease;
+  }
+
+  &__title {
+    @include menu-2;
+
+    @include tablet {
+      @include t1;
+    }
+  }
+
+  &__icon {
+    transition: transform 200ms ease;
+
+    svg {
+      transition: stroke 200ms ease;
+    }
+  }
+
+  &__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 200ms ease;
+  }
+
+  // Состояние открытого аккордеона
+  &[data-collapse-item="open"] {
+    .collapse__icon {
+      transform: rotate(180deg);
+    }
+
+    .collapse__content {
+      height: auto;
+    }
+  }
+}

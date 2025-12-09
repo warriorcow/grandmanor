@@ -1,14 +1,32 @@
 @use '@/styles/mixins' as *;
 
 .catalog-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  width: 100%;
 
-  @include tablet {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-  @include mobile {
-    grid-template-columns: repeat(2, 1fr);
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    & > * {
+      &:nth-child(3n),
+      &:nth-child(3n-1), {
+        border-left: none;
+      }
+
+      &:nth-child(n+4) {
+        border-top: none;
+      }
+    }
   }
 }

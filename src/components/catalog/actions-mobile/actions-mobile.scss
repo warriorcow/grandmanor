@@ -1,0 +1,16 @@
+@use '@/styles/mixins' as *;
+
+.catalog-actions-mobile {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @include tablet {
+    display: flex;
+  }
+
+  &__button {
+
+  }
+}

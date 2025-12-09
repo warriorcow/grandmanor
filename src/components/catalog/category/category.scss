@@ -1,0 +1,33 @@
+@use '@/styles/mixins' as *;
+
+.catalog-category {
+  @include tablet {
+    display: none;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__item {
+    @include button;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DFDFDF;
+    padding: 11px 20px;
+    min-height: 60px;
+    text-align: center;
+    cursor: pointer;
+
+    &:not(:nth-child(5n+1)):not(:nth-child(5n-4)) {
+      border-left: none;
+    }
+
+    &:nth-child(n+6) {
+      border-top: none;
+    }
+  }
+}

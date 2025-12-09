@@ -1,15 +1,25 @@
 .catalog
-    +breadcrumbs([
-        {
-            text: 'Главная',
-            href: '/'
-        },
-        {
-            text: 'Каталог раздела',
-            href: '/',
-            active: true
-        }
-    ])
+    .catalog__header
+        +breadcrumbs([
+            {
+                text: 'Главная',
+                href: '/'
+            },
+            {
+                text: 'Каталог раздела',
+                href: '/',
+                active: true
+            }
+        ])
+
+
+        .catalog__header-wrapper
+            h1.catalog__title Мебель в наличии
+            include actions/actions
+
+    include category-mobile/category-mobile
+
     .catalog__wrapper
+        include actions-mobile/actions-mobile
         include ./filter/filter
         include ./list/list

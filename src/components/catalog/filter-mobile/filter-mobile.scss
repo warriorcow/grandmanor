@@ -1,46 +1,36 @@
 @use '@/styles/mixins' as *;
 
-.catalog-filter {
-  position: sticky;
-  top: 200px;
-  width: 320px;
+.filter-mobile {
+  display: none;
+  position: relative;
 
   @include tablet {
-    display: none;
+    display: flex;
+  }
+
+  &__button {
+
   }
 
   &__items {
-    border-right: 1px solid #DFDFDF;
+    background-color: #fff;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 0;
+    border: 1px solid #6F6F6F;
+    z-index: 1;
+    min-width: 335px;
 
     & > * {
-      padding: 30px 30px 30px 0;
+      padding: 20px;
+    }
 
-      &::before {
-        position: absolute;
-        content: '';
-        width: 50vw;
-        height: 1px;
-        bottom: 0;
-        right: 0;
-        background-color: #DFDFDF;
-      }
-
-      &:first-child {
-        &::before {
-          bottom: auto;
-          top: 0;
-        }
-
-        &::after {
-          position: absolute;
-          content: '';
-          width: 50vw;
-          height: 1px;
-          bottom: 0;
-          right: 0;
-          background-color: #DFDFDF;
-        }
-      }
+    &.open {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
@@ -48,6 +38,7 @@
     $item: &;
 
     position: relative;
+    border-bottom: 1px solid #DFDFDF;
 
     &-header {
       cursor: pointer;
@@ -57,7 +48,7 @@
     }
 
     &-name {
-      @include menu-2
+      @include button;
     }
 
     &-btn {

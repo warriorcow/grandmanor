@@ -1,0 +1,9 @@
+mixin collapse(title, isOpen = false)
+    .collapse(data-collapse-item=isOpen ? 'open' : '')&attributes(attributes)
+        .collapse__header(tabindex="0" role="button")
+            span.collapse__title= title
+            span.collapse__icon
+                img(src="./icons/chevron.svg")
+        .collapse__content
+            if block
+                block
