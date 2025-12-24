@@ -25,6 +25,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: 150ms ease-in-out;
 
     @include tablet {
       @include h5;
@@ -43,6 +44,10 @@
       @include tablet {
         grid-column: auto;
       }
+    }
+
+    &:hover {
+      box-shadow: inset 0 0 0 1px #000;
     }
   }
 
