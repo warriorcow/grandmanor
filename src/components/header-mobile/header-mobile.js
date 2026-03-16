@@ -13,6 +13,7 @@ function initMobileHeader() {
 
     if (isOpen) {
       // Убираем блокировку скролла
+
       document.body.style.overflow = '';
 
       // Скролим меню в начало
@@ -25,10 +26,13 @@ function initMobileHeader() {
       categories.forEach(category => {
         category.classList.remove('open');
         const sub = category.querySelector('.header-mobile__menu-subcategory');
-        sub.style.height = '0px';
+        if (sub) {
+          sub.style.height = '0px';
+        }
       });
     } else {
       // Открываем меню и блокируем скролл
+      console.log('adada')
       document.body.style.overflow = 'hidden';
       headerWrapper.classList.add('open');
     }
@@ -39,6 +43,11 @@ function initMobileHeader() {
     const sub = category.querySelector('.header-mobile__menu-subcategory');
 
     // Изначально скрываем
+    if (!sub) {
+      btn.style.display = 'none'
+      return
+    }
+
     sub.style.height = '0px';
     sub.style.overflow = 'hidden';
     sub.style.transition = 'height .3s ease';
