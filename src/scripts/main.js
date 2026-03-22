@@ -11,6 +11,7 @@ import '../components/select/select.js'
 import '../components/catalog/views/views.js'
 import '../components/collapse/collapse.js'
 import '../components/catalog/filter-mobile/filter-mobile.js'
+import '../components/product-card/product-card.js'
 
 // твой JS-код
 console.log('Pug + SCSS + Vite loaded')

@@ -19,6 +19,10 @@
     max-width: 264px;
     margin: 0 auto;
     position: relative;
+
+    img {
+      display: flex;
+    }
   }
 
   &__image {
@@ -122,6 +126,32 @@
           stroke: red;
         }
       }
+    }
+  }
+
+  &__chars {
+    display: none;
+  }
+
+  &__tip {
+    width: 13px;
+    height: 13px;
+    margin-left: 5px;
+    cursor: help;
+  }
+
+  &__buy {
+    width: 100%;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    margin-top: auto;
+
+    #{$this}__button {
+      display: none;
     }
   }
 }

@@ -8,12 +8,12 @@ function initSearchMobile() {
     searchMobileEl.style.transition = ".3s ease";
 
     searchTabbarOpenBtn.addEventListener('click', () => {
-        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
         searchMobileEl.classList.add('open');
     })
 
     searchTabbarCloseBtn.addEventListener('click', () => {
-        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
         searchMobileEl.classList.remove('open');
     });
 }

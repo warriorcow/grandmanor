@@ -1,6 +1,9 @@
 @use '@/styles/mixins' as *;
 
 .catalog-list {
+  $this: &;
+  $product-card: '.product-card';
+
   display: flex;
   flex-direction: column;
   gap: 40px 0;
@@ -8,14 +11,14 @@
 
   &__items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
 
     @include tablet {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
     }
 
     @include mobile {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
     }
 
     & > * {
@@ -26,6 +29,80 @@
 
       &:nth-child(n+4) {
         border-top: none;
+      }
+    }
+  }
+
+  &--row {
+    #{$this}__items {
+      grid-template-columns: 1fr;
+    }
+
+    #{$product-card} {
+      flex-direction: row;
+      padding: 30px;
+      border: 1px solid #DFDFDF;
+
+      &:not(:first-child) {
+        border-top: none;
+      }
+
+      #{$product-card}__top {
+        margin: 0;
+        max-width: 244px;
+
+        #{$product-card}__button {
+          display: none;
+        }
+      }
+
+      #{$product-card}__body {
+        margin: 0 30px;
+      }
+
+      #{$product-card}__chars {
+        @include button;
+
+        max-width: 277px;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 0 20px;
+        margin-top: 40px;
+
+        &-row {
+
+        }
+
+        &-name {
+          color: #8D8D8D;
+        }
+
+        &-value {
+          padding-left: 40px;
+
+          a {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+          }
+        }
+      }
+
+      #{$product-card}__footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 auto;
+        gap: 0;
+        min-width: 239px;
+
+        #{$product-card}__button {
+          display: flex;
+          align-self: flex-end;
+        }
+
+        #{$product-card}__price {
+          margin-top: 40px;
+          margin-bottom: auto;
+        }
       }
     }
   }

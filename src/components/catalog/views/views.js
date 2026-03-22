@@ -2,16 +2,16 @@ function initCatalogViews() {
     const viewItems = document.querySelectorAll('.catalog-views__item');
     if (!viewItems.length) return;
 
-    // Вспомогательные функции
-    const getViewFromUrl = () => {
-        const params = new URLSearchParams(window.location.search);
-        return params.get('view');
+    const COOKIE_NAME = 'catalogView';
+    const MOBILE_BREAKPOINT = 1280; // px
+
+    const getViewFromCookie = () => {
+        const match = document.cookie.match(new RegExp('(^| )' + COOKIE_NAME + '=([^;]+)'));
+        return match ? decodeURIComponent(match[2]) : null;
     };
 
-    const setViewInUrl = (viewType) => {
-        const url = new URL(window.location);
-        url.searchParams.set('view', viewType);
-        window.history.replaceState({}, '', url);
+    const setViewToCookie = (viewType) => {
+        document.cookie = `${COOKIE_NAME}=${encodeURIComponent(viewType)}; path=/; max-age=31536000`;
     };
 
     const activateView = (viewType) => {
@@ -20,23 +20,41 @@ function initCatalogViews() {
         });
     };
 
-    // Инициализация: если нет view в URL - ставим первый
-    let currentView = getViewFromUrl();
+    const applyViewClass = (viewType) => {
+        const container = document.querySelector('.catalog-list');
+        if (!container) return;
+
+        // если текущий вид row и экран < 1280, принудительно grid
+        const finalView = (viewType === 'row' && window.innerWidth < MOBILE_BREAKPOINT) ? 'grid' : viewType;
+
+        container.classList.toggle('catalog-list--row', finalView === 'row');
+        container.classList.toggle('catalog-list--grid', finalView === 'grid');
+    };
+
+    // Инициализация: берем вид из куки или первый по умолчанию
+    let currentView = getViewFromCookie();
     if (!currentView) {
-        const defaultView = viewItems[0].getAttribute('data-view');
-        setViewInUrl(defaultView);
-        currentView = defaultView;
+        currentView = viewItems[0].getAttribute('data-view');
+        setViewToCookie(currentView);
     }
 
     activateView(currentView);
+    applyViewClass(currentView);
 
-    // Клики по элементам
+    // клики по элементам
     viewItems.forEach(item => {
         item.addEventListener('click', () => {
             const viewType = item.getAttribute('data-view');
-            setViewInUrl(viewType);
+            currentView = viewType; // обновляем текущий вид
+            setViewToCookie(viewType);
             activateView(viewType);
+            applyViewClass(viewType);
         });
+    });
+
+    // ресайз: проверяем актуальный вид из currentView
+    window.addEventListener('resize', () => {
+        applyViewClass(currentView);
     });
 }
 

@@ -12,7 +12,7 @@ function initMobileHeader() {
     const isOpen = headerWrapper.classList.contains('open');
 
     if (isOpen) {
-      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
 
       menuWrapper.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -27,7 +27,7 @@ function initMobileHeader() {
         }
       });
     } else {
-      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
       headerWrapper.classList.add('open');
     }
   });
