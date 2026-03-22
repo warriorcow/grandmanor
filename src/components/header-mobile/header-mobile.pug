@@ -8,16 +8,18 @@ header.header-mobile
             img(src='./icons/phone.svg')
     nav.header-mobile__menu
         .header-mobile__menu-categories
-            each i in [1, 2, 3, 4, 5, 6, 7]
+            each i, index in [1, 2, 3, 4, 5, 6, 7]
                 .header-mobile__menu-category
                     .header-mobile__menu-category-wrapper
                         a.header-mobile__menu-category-link(href="#") Спальня
-                        button.header-mobile__menu-category-button
-                            img(src='./icons/chevron.svg')
-                    ul.header-mobile__menu-subcategory
-                       each i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-                         li.header-mobile__menu-subcategory-item
-                             a(href="#") Кровати
+                        if index % 2 === 1
+                            button.header-mobile__menu-category-button
+                                img(src='./icons/chevron.svg')
+                    if index % 2 === 1
+                        ul.header-mobile__menu-subcategory
+                           each i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+                             li.header-mobile__menu-subcategory-item
+                                 a(href="#") Кровати
         .header-mobile__actions
             a.header-mobile__action(href="#") О нас
             a.header-mobile__action(href="#") Покупателям
