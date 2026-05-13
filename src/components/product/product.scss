@@ -1,0 +1,862 @@
+@use '@/styles/mixins' as *;
+
+// =============================================
+// Переменные компонента
+// =============================================
+$gallery-width: 530px;
+$gallery-height: 431px;
+$details-width: 100%;
+$price-panel-width: 330px;
+$section-padding: 90px;
+
+.product {
+  @include container;
+
+  display: flex;
+  flex-direction: column;
+  gap: 150px 0;
+  width: 100%;
+  margin-top: 40px;
+
+  @include tablet {
+    gap: 80px 0;
+    margin-top: 10px;
+  }
+
+  // =============================================
+  // Герой (хлебные крошки + товар)
+  // =============================================
+  &__hero {
+    width: 100%;
+  }
+
+  &__hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+
+    @include tablet {
+      gap: 20px 0;
+    }
+  }
+
+  // =============================================
+  // Логотип бренда
+  // =============================================
+  &__brand {
+    height: 36px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__brand-logo {
+    width: auto;
+    height: 36px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  // =============================================
+  // Карточка товара (галерея + инфо)
+  // =============================================
+  &__card {
+    display: grid;
+    grid-template-columns: 530px 1fr;
+    gap: 40px;
+    align-items: flex-start;
+
+    @include tablet {
+      gap: 0 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 24px 0;
+    }
+  }
+
+  // =============================================
+  // Галерея фотографий
+  // =============================================
+  &__gallery {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    flex-shrink: 0;
+    width: $gallery-width;
+
+    @include tablet {
+      width: 334px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__gallery-stage {
+    position: relative;
+    width: 100%;
+    height: $gallery-height;
+    overflow: hidden;
+
+    @include tablet {
+      height: 272px;
+    }
+
+    @include mobile {
+      height: 272px;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__gallery-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+    pointer-events: none;
+
+    > * {
+      pointer-events: all;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px 0;
+  }
+
+  &__tag {
+    @include t3;
+
+    padding: 4px 8px;
+    border: 1px solid currentColor;
+    background-color: #fff;
+
+    &--sale {
+      color: #38BD74;
+    }
+
+    &--available {
+      color: #3897BD;
+    }
+  }
+
+  &__favorite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    svg path {
+      transition: fill 0.2s, stroke 0.2s;
+    }
+
+    &.is-active svg path {
+      fill: red;
+      stroke: red;
+    }
+  }
+
+  &__gallery-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__gallery-prev,
+  &__gallery-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 30px;
+
+    // Переопределяем стили Swiper для точек
+    &.swiper-pagination {
+      position: static;
+      bottom: auto;
+      left: auto;
+      width: auto;
+      margin-top: 0;
+    }
+
+    :global(.swiper-pagination-bullet) {
+      width: 10px;
+      height: 10px;
+      margin: 0;
+      border-radius: 0;
+      background-color: #DFDFDF;
+      opacity: 1;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      background-color: #6F6F6F;
+    }
+  }
+
+  // =============================================
+  // Информация о товаре (правая колонка)
+  // =============================================
+  &__info {
+    flex: 1 0 0;
+    min-width: 0;
+    display: grid;
+    grid-template-columns: 1fr $price-panel-width;
+    grid-template-rows: auto 1fr;
+    column-gap: 80px;
+    row-gap: 20px;
+    align-self: stretch;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 20px 0;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include h4;
+
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 481px;
+    max-width: 100%;
+
+    @include tablet {
+      @include menu-1;
+
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  &__info-body {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+
+  // =============================================
+  // Детали товара (размеры + характеристики + кнопка)
+  // =============================================
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    width: $details-width;
+    flex-shrink: 0;
+
+    @include tablet {
+      width: 100%;
+      gap: 20px 0;
+    }
+  }
+
+  &__sizes {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__size {
+    @include lato(400);
+
+    font-size: 16px;
+    line-height: 100%;
+    padding: 6px 12px;
+    border: 1px solid #8D8D8D;
+    color: #8D8D8D;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+    white-space: nowrap;
+
+    &.is-active,
+    &:hover {
+      border-color: #000;
+      color: #000;
+    }
+  }
+
+  // =============================================
+  // Таблица характеристик
+  // =============================================
+  &__specs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  &__specs-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 20px;
+    justify-content: space-between;
+  }
+
+  &__specs-term {
+    @include lato(400);
+
+    font-size: 16px;
+    line-height: 100%;
+    color: #8D8D8D;
+    flex: 0 0 116px;
+
+    sup {
+      font-size: 10px;
+      vertical-align: super;
+      line-height: 0;
+    }
+  }
+
+  &__specs-desc {
+    @include lato(400);
+
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    min-width: 100px;
+  }
+
+  &__specs-link {
+    text-decoration: underline;
+    color: #000;
+
+    &:hover {
+      color: #6F6F6F;
+    }
+  }
+
+  &__specs-tip {
+    width: 13px;
+    height: 13px;
+    cursor: help;
+    flex-shrink: 0;
+  }
+
+  &__to-cart {
+    width: 210px;
+    height: 40px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  // =============================================
+  // Обёртка блока цены + формы
+  // =============================================
+  &__price-box {
+    grid-column: 2;
+    grid-row: 2;
+    border: 1px solid #8D8D8D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px 0;
+    align-self: stretch;
+
+    @include tablet {
+      order: 2;
+    }
+  }
+
+  // =============================================
+  // Панель быстрого заказа (форма — только desktop)
+  // =============================================
+  &__price-panel {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      border: 1px solid #000;
+      padding: 20px;
+    }
+  }
+
+  // Мобильная кнопка «В корзину» внутри price-box
+  &__to-cart-mobile {
+    flex: 1;
+
+    @include tablet {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  &__price-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 15px;
+  }
+
+  &__price-new {
+    @include h3;
+
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: #000;
+  }
+
+  &__price-amount {
+    white-space: nowrap;
+  }
+
+  &__price-unit {
+    @include h5;
+  }
+
+  &__price-old {
+    @include h6;
+
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    color: #8D8D8D;
+  }
+
+  &__price-old-amount {
+    text-decoration: line-through;
+    font-size: 16px;
+  }
+
+  &__price-old-unit {
+    font-size: 12px;
+  }
+
+  // =============================================
+  // Форма быстрого заказа
+  // =============================================
+  &__buy-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 100%;
+  }
+
+  &__buy-heading {
+    @include lato(400);
+
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+  }
+
+  &__buy-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px 0;
+  }
+
+  &__buy-label {
+    @include t3;
+
+    color: #6F6F6F;
+    display: block;
+  }
+
+  &__buy-input {
+    height: 35px;
+    background-color: #F8F8F8;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 8px;
+
+    &:focus {
+      background-color: #F0F0F0;
+    }
+  }
+
+  &__buy-row {
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #000;
+      gap: 30px 0;
+    }
+  }
+
+  &__buy-inline-price {
+    @include tablet {
+      display: flex;
+      gap: 0 10px;
+      flex-shrink: 0;
+    }
+
+    .product__price-new {
+      @include h3;
+      display: flex;
+      align-items: baseline;
+      gap: 0 5px;
+      color: #000;
+    }
+
+    .product__price-old {
+      @include h6;
+      display: flex;
+      align-items: baseline;
+      gap: 0 4px;
+      color: #8D8D8D;
+
+      del {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__buy-submit {
+    width: 100%;
+    height: 40px;
+  }
+
+  &__buy-agree {
+    display: flex;
+    align-items: flex-start;
+    gap: 0 6px;
+  }
+
+  &__buy-checkbox {
+    position: relative;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      z-index: 1;
+      margin: 0;
+    }
+  }
+
+  &__buy-checkbox-box {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    input[type="checkbox"]:checked + & {
+      background-color: #000;
+    }
+  }
+
+  &__buy-agree-text {
+    @include t3;
+
+    color: #6F6F6F;
+    line-height: 1.4;
+  }
+
+  &__buy-agree-link {
+    text-decoration: underline;
+    color: #6F6F6F;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  // =============================================
+  // Описание товара
+  // =============================================
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0 20px;
+    max-width: 763px;
+    padding-left: 20px;
+    border-left: 1px solid #000;
+    grid-column: span 2;
+
+    @include tablet {
+      grid-column: 2;
+      margin-top: 20px;
+      border: none;
+      padding-left: 0;
+    }
+
+    .product__brand {
+      display: none;
+
+      @include tablet {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+      }
+    }
+
+    @include mobile {
+      max-width: 100%;
+      grid-column: 1;
+    }
+  }
+
+  &__description-text {
+    @include lato(400);
+
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+    flex: 1;
+  }
+
+  // =============================================
+  // Секция «Также из коллекции»
+  // =============================================
+  &__collection {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__collection-inner {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
+
+  &__section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__section-title {
+    @include h3;
+
+    color: #000;
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+
+  &__section-nav {
+    display: flex;
+    gap: 0 40px;
+    align-items: center;
+  }
+
+
+  &__col-prev,
+  &__col-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
+  &__col-swiper {
+    width: 100%;
+    overflow: visible;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  // =============================================
+  // Секция «Смотрите также»
+  // =============================================
+  &__related {
+    width: 100%;
+  }
+
+  &__related-inner {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px 0;
+  }
+
+  &__related-title {
+    @include h3;
+
+    color: #000;
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+
+  &__related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+      // Убираем отдельные бордеры, делаем сетку с совмещёнными границами
+      margin-right: -1px;
+      margin-bottom: -1px;
+    }
+  }
+
+  &__related-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40px;
+  }
+
+  &__related-count {
+    @include t2;
+
+    color: #8D8D8D;
+    position: absolute;
+    right: 0;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__show-more {
+    min-width: 180px;
+  }
+}
+
+// =============================================
+// Переопределения пагинации Swiper для галереи
+// =============================================
+.product__pagination {
+  &.swiper-pagination-bullets {
+    bottom: auto;
+    top: auto;
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 !important;
+    border-radius: 0;
+    background-color: #DFDFDF;
+    opacity: 1;
+    transition: background-color 0.2s;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #6F6F6F;
+  }
+}

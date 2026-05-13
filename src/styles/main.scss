@@ -1,3 +1,6 @@
+// Шрифты
+@use 'fonts';
+
 // Импортируем стили Swiper
 @use 'swiper/css';
 @use 'swiper/css/navigation';
@@ -22,6 +25,7 @@
 @use '../../src/components/tabbar/tabbar' as *;
 @use '../../src/components/breadcrumbs/breadcrumbs' as *;
 @use '../../src/components/product-card/product-card' as *;
+@use '../../src/components/product/product' as *;
 
 @use '../../src/components/catalog/catalog' as *;
 @use '../../src/components/catalog/filter/filter' as *;

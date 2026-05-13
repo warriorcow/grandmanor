@@ -44,8 +44,8 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: path.resolve(__dirname, 'index.html'),
-                // Если нужны отдельные страницы, создайте для них HTML файлы:
                 catalog: path.resolve(__dirname, 'catalog.html'),
+                product: path.resolve(__dirname, 'product.html'),
             }
         },
         assetsInlineLimit: 0

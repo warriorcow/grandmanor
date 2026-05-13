@@ -17,16 +17,19 @@
   &__top {
     aspect-ratio: 1 / 1;
     max-width: 264px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 
     img {
       display: flex;
+      object-fit: cover;
     }
   }
 
   &__image {
-    object-fit: contain;
+    display: flex;
+    object-fit: cover;
   }
 
   &__name {

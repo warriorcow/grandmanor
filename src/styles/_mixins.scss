@@ -30,6 +30,7 @@
 
 @mixin menu-2 {
   @include lato(400);
+
   font-size: 24px;
   line-height: 29px;
 }
@@ -38,7 +39,7 @@
 @mixin h1 {
   @include tenor();
   font-size: 48px;
-  line-height: 100%;
+  line-height: 56px;
 }
 
 @mixin h2 {
