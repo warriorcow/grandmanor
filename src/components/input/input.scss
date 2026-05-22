@@ -15,5 +15,10 @@
   border: 1px solid #DFDFDF;
   outline: none;
   padding: 4px 10px;
+
+  &.is-invalid {
+    border-color: #E53535;
+    background-color: #FFF0F0;
+  }
 }
 

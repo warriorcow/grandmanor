@@ -1,3 +1,17 @@
 mixin input(payload)
-    input.input(type=payload.type name=payload.name placeholder=payload.placeholder)
+  - const type = payload.type || 'text'
+  - const id = payload.id || null
+  - const name = payload.name || null
+  - const placeholder = payload.placeholder || null
+  - const autocomplete = payload.autocomplete || null
+  - const invalid = payload.invalid || false
+
+  input.input(
+    class=invalid ? 'is-invalid' : ''
+    type=type
+    id=id
+    name=name
+    placeholder=placeholder
+    autocomplete=autocomplete
+  )
 

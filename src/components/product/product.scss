@@ -191,31 +191,57 @@ $section-padding: 90px;
 
   &__gallery-controls {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     z-index: 2;
+    pointer-events: none;
 
-    @include mobile {
-      display: none;
+    @include tablet {
+      padding: 0 10px;
     }
   }
 
   &__gallery-prev,
   &__gallery-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // Сбрасываем абсолютное позиционирование Swiper
+    position: static !important;
+    margin-top: 0 !important;
+    transform: none !important;
+
+    pointer-events: all;
+    flex-shrink: 0;
     width: 40px;
     height: 40px;
+    color: #fff;
+    background: rgba(35, 35, 35, 0.5);
+    backdrop-filter: blur(2px);
+    padding: 8px;
     cursor: pointer;
-    transition: opacity 0.2s;
+    transition: 0.2s ease;
+
+    // Размер стрелки Swiper (::after)
+    --swiper-navigation-size: 16px;
+
+    @include tablet {
+      width: 30px;
+      height: 30px;
+      padding: 7px 11px;
+      --swiper-navigation-size: 14px;
+    }
+
+    &.swiper-button-disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
 
     &:hover {
-      opacity: 0.6;
+      color: #8D8D8D;
     }
   }
 
@@ -565,6 +591,7 @@ $section-padding: 90px;
   &__buy-inline-price {
     @include tablet {
       display: flex;
+      align-items: center;
       gap: 0 10px;
       flex-shrink: 0;
     }
@@ -703,8 +730,6 @@ $section-padding: 90px;
   }
 
   &__collection-inner {
-    @include container;
-
     display: flex;
     flex-direction: column;
     gap: 40px 0;
@@ -844,6 +869,10 @@ $section-padding: 90px;
     gap: 0 30px;
     width: 100%;
     height: auto;
+
+    @include tablet {
+      gap: 0 15px;
+    }
   }
 
   .swiper-pagination-bullet {
@@ -854,6 +883,11 @@ $section-padding: 90px;
     background-color: #DFDFDF;
     opacity: 1;
     transition: background-color 0.2s;
+
+    @include tablet {
+      width: 6px;
+      height: 6px;
+    }
   }
 
   .swiper-pagination-bullet-active {

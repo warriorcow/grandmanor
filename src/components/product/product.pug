@@ -35,12 +35,8 @@
                   path(d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke="#8D8D8D" stroke-width="2")
 
             .product__gallery-controls
-              button.product__gallery-prev(type="button" aria-label="Предыдущее фото")
-                svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M24 12L16 20L24 28" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
-              button.product__gallery-next(type="button" aria-label="Следующее фото")
-                svg(width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg")
-                  path(d="M16 12L24 20L16 28" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round")
+              .swiper-button-prev.product__gallery-prev(aria-label="Предыдущее фото")
+              .swiper-button-next.product__gallery-next(aria-label="Следующее фото")
 
           .swiper-pagination.product__pagination
 
@@ -72,10 +68,10 @@
               p.product__buy-heading Купить в один клик
               .product__buy-field
                 label.product__buy-label(for="buy-name") Имя
-                input.product__buy-input#buy-name(type="text" name="name" autocomplete="given-name")
+                +input({ type: 'text', id: 'buy-name', name: 'name', autocomplete: 'given-name', invalid: true }).product__buy-input
               .product__buy-field
                 label.product__buy-label(for="buy-phone") Телефон
-                input.product__buy-input#buy-phone(type="tel" name="phone" autocomplete="tel")
+                +input({ type: 'tel', id: 'buy-phone', name: 'phone', autocomplete: 'tel' }).product__buy-input
               +button('Купить', { variant: 'secondary' }).product__buy-submit
               label.product__buy-agree
                 .product__buy-checkbox
