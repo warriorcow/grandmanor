@@ -291,7 +291,7 @@ $section-padding: 90px;
     grid-template-rows: auto 1fr;
     column-gap: 80px;
     row-gap: 20px;
-    align-self: stretch;
+    align-self: flex-start;
 
     @include tablet {
       display: flex;
@@ -446,8 +446,7 @@ $section-padding: 90px;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px 0;
+    gap: 12px 0;
     align-self: stretch;
 
     @include tablet {
