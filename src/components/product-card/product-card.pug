@@ -1,5 +1,7 @@
 mixin productCard(payload)
+    - const href = payload.href || '/product'
     .product-card
+        a.product-card__link(href=href aria-label=payload.name || 'Перейти к товару')
         .product-card__top
             img.product-card__image(src=payload.image)
             .product-card__actions
@@ -42,5 +44,5 @@ mixin productCard(payload)
                 .product-card__price-old
                     del= payload.priceOld
                     |  руб.
-            div
-                +button('В корзину', { variant: 'primary' }).product-card__buy
+
+        +button('В корзину', { variant: 'primary' }).product-card__buy

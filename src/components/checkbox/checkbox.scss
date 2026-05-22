@@ -32,6 +32,10 @@
     border: 1px solid #000;
   }
 
+  &.is-invalid &__marker {
+    border-color: #E53535;
+  }
+
   &__text {
     user-select: none;
   }

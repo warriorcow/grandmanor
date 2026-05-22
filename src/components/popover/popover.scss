@@ -1,0 +1,43 @@
+@use '@/styles/mixins' as *;
+
+.popover {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: help;
+  flex-shrink: 0;
+
+  &__trigger {
+    width: 13px;
+    height: 13px;
+    display: block;
+    flex-shrink: 0;
+    transition: filter 0.2s;
+  }
+
+  &:hover &__trigger {
+    filter: brightness(0);
+  }
+
+  &__content {
+    @include t3;
+
+    color: #8D8D8D;
+    position: absolute;
+    left: calc(100% + 8px);
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #DFDFDF;
+    padding: 2px 4px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+
+  &:hover &__content {
+    opacity: 1;
+  }
+}

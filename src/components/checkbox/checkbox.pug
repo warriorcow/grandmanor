@@ -1,7 +1,11 @@
-mixin checkbox(text, count)
-    label.checkbox()&attributes(attributes)
-        input.checkbox__input(type="checkbox")
-        .checkbox__marker(type="checkbox")
-        span.checkbox__text(class="checkbox")= text
-        if count
-            span.checkbox__count= count
+mixin checkbox(text, count, invalid)
+  label.checkbox(class=invalid ? 'is-invalid' : '')&attributes(attributes)
+    input.checkbox__input(type="checkbox")
+    .checkbox__marker
+    if block
+      block
+    else
+      if text
+        span.checkbox__text= text
+      if count
+        span.checkbox__count= count

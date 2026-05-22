@@ -73,10 +73,7 @@
                 label.product__buy-label(for="buy-phone") Телефон
                 +input({ type: 'tel', id: 'buy-phone', name: 'phone', autocomplete: 'tel' }).product__buy-input
               +button('Купить', { variant: 'secondary' }).product__buy-submit
-              label.product__buy-agree
-                .product__buy-checkbox
-                  input#buy-agree(type="checkbox")
-                  .product__buy-checkbox-box(for="buy-agree")
+              +checkbox(null, null, true).product__buy-agree
                 p.product__buy-agree-text
                   | Нажимая на кнопку "Купить", я принимаю&nbsp;
                   a.product__buy-agree-link(href="#") условия политики конфиденциальности и обработки персональных данных.
@@ -103,7 +100,7 @@
                   dt.product__specs-term Габариты (см)
                   dd.product__specs-desc
                     | 90*90*90
-                    img.product__specs-tip(src="./icons/question.svg" title="хуй" alt="Подробнее о размерах")
+                    +popover('длина/ширина/высота')
                 .product__specs-row
                   dt.product__specs-term Вес (кг)
                   dd.product__specs-desc 100
