@@ -38,10 +38,6 @@
 @use '../../src/components/catalog/actions-mobile/actions-mobile' as *;
 @use '../../src/components/catalog/filter-mobile/filter-mobile' as *;
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   @include lato(400);
 
@@ -84,6 +80,7 @@ button {
 }
 
 .main-page-wrapper {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 150px 0;

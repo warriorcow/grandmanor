@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
+import { Fancybox } from '@fancyapps/ui';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
 
 function initProductPage() {
   // Инициализация только на странице товара
@@ -8,6 +10,19 @@ function initProductPage() {
   initPhotoGallery();
   initCollectionSlider();
   initSizeSelector();
+  initFancybox();
+}
+
+function initFancybox() {
+  Fancybox.bind('[data-fancybox]', {
+    Carousel: {
+      Toolbar: {
+        display: {
+          right: ['close']
+        }
+      },
+    }
+  });
 }
 
 // --- Галерея фотографий товара ---

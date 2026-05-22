@@ -24,7 +24,8 @@
               .swiper-wrapper
                 each n in [1, 2, 3, 4, 5]
                   .swiper-slide
-                    img.product__gallery-img(src="./images/slider-1.png" alt="Фото товара")
+                    a.product__gallery-link(href="./images/slider-1.png" data-fancybox="product-gallery")
+                      img.product__gallery-img(src="./images/slider-1.png" alt="Фото товара")
 
             .product__gallery-overlay
               .product__tags
