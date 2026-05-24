@@ -70,6 +70,13 @@
   &__logo {
     display: flex;
     height: 45px;
+    flex-shrink: 0;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   &__phone {

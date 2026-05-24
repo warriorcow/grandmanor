@@ -1,6 +1,16 @@
 function initProductCardScript() {
     console.log('initProductCardScript');
 
+    document.querySelectorAll('a.product-card').forEach(card => {
+        card.addEventListener('click', e => {
+            if (e.target.closest('button')) e.preventDefault();
+        });
+    });
+
+    document.querySelectorAll('.product-card__button-favorite').forEach(btn => {
+        btn.addEventListener('click', () => btn.classList.toggle('active'));
+    });
+
     const formatter = new Intl.NumberFormat('ru-RU');
 
     // все цены в карточках

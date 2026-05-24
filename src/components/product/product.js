@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Fancybox } from '@fancyapps/ui';
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import IMask from 'imask';
 
 function initProductPage() {
   // Инициализация только на странице товара
@@ -11,6 +12,41 @@ function initProductPage() {
   initCollectionSlider();
   initSizeSelector();
   initFancybox();
+  initFavorite();
+  initPhoneMask();
+  initInvalidInputs();
+  initAgreeCheckbox();
+}
+
+function initFavorite() {
+  const btn = document.querySelector('.product__favorite');
+  if (!btn) return;
+  btn.addEventListener('click', () => btn.classList.toggle('is-active'));
+}
+
+function initInvalidInputs() {
+  document.querySelectorAll('.product__buy-field .input.is-invalid').forEach(input => {
+    input.addEventListener('input', () => input.classList.remove('is-invalid'), { once: true });
+  });
+}
+
+function initAgreeCheckbox() {
+  const label = document.querySelector('.product__buy-agree');
+  if (!label) return;
+  const input = label.querySelector('input[type="checkbox"]');
+  if (!input) return;
+  input.addEventListener('change', () => {
+    if (input.checked) label.classList.remove('is-invalid');
+  });
+}
+
+function initPhoneMask() {
+  const input = document.querySelector('.product__buy-field input[type="tel"]');
+  if (!input) return;
+
+  IMask(input, {
+    mask: '+{7} (000) 000-00-00',
+  });
 }
 
 function initFancybox() {
@@ -62,7 +98,7 @@ function initCollectionSlider() {
     spaceBetween: 0,
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 2.1,
         spaceBetween: 0,
       },
       769: {

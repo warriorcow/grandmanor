@@ -134,7 +134,7 @@
   }
 
   &__buttons {
-
+    z-index: 1;
   }
 
   &__button {
@@ -142,15 +142,18 @@
 
     &-favorite {
       svg {
-        fill: none;
+        fill: #fff;
         stroke: #8D8D8D;
+        transition: fill 0.2s, stroke 0.2s;
       }
 
-      &.active {
-        svg {
-          fill: red;
-          stroke: red;
-        }
+      &:hover svg {
+        stroke: #000;
+      }
+
+      &.active svg {
+        fill: #000;
+        stroke: #000;
       }
     }
   }

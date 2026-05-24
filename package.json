@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^6.1.14",
+    "imask": "^7.6.1",
     "sass": "^1.93.2",
     "swiper": "^12.0.3",
     "vite-plugin-pug": "^0.4.1"
