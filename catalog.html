@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/favicon-D1uWijmY.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/main-6zwK4PkT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-iU-s6E6y.css">
+  </head>
+  <body>
+    
+<!-- Mixins-->
+<header class="header">
+  <div class="header__top">
+    <div class="header__container">
+      <nav class="header__nav"><a href="">О нас</a><a href="">Покупателям</a><a href="">Контакты</a><a href="">Салоны</a></nav><a class="header__logo" href=""><img src="./images/logo.png" alt="Logo"/></a>
+      <div class="header__side"><a class="header__phone" href="tel:8-800-775-38-18">8-800-775-38-18</a>
+        <div class="header__actions"><a href="#"><img src="./icons/favorite.svg" alt="favorite"/></a><a href="#"><img src="./icons/cart.svg"/></a><a href="#"><img src="./icons/person.svg"/></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__container">
+      <nav class="header__menu">
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Спальня</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Кровати</a><a class="header__dropdown-link" href="#">Прикроватные тумбочки</a><a class="header__dropdown-link" href="#">Комоды</a><a class="header__dropdown-link" href="#">Высокие комоды</a><a class="header__dropdown-link" href="#">Туалетные столики</a><a class="header__dropdown-link" href="#">Банкетки</a><a class="header__dropdown-link" href="#">Шкафы</a><a class="header__dropdown-link" href="#">Постельные комплекты и пледы</a><a class="header__dropdown-link" href="#">Аксессуары</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Столовая</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Обеденные столы</a><a class="header__dropdown-link" href="#">Стулья и табуреты</a><a class="header__dropdown-link" href="#">Банкетки для столовой</a><a class="header__dropdown-link" href="#">Буфеты и серванты</a><a class="header__dropdown-link" href="#">Барные стулья</a><a class="header__dropdown-link" href="#">Столовые комплекты</a><a class="header__dropdown-link" href="#">Сервировка</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Гостиная</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Диваны</a><a class="header__dropdown-link" href="#">Кресла</a><a class="header__dropdown-link" href="#">Журнальные столы</a><a class="header__dropdown-link" href="#">Тумбы под ТВ</a><a class="header__dropdown-link" href="#">Комоды для гостиной</a><a class="header__dropdown-link" href="#">Пуфы и банкетки</a><a class="header__dropdown-link" href="#">Текстиль для гостиной</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Домашний офис</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Письменные столы</a><a class="header__dropdown-link" href="#">Офисные кресла</a><a class="header__dropdown-link" href="#">Шкафы для офиса</a><a class="header__dropdown-link" href="#">Полки и стеллажи</a><a class="header__dropdown-link" href="#">Органайзеры</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">освещение и Декор</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Люстры</a><a class="header__dropdown-link" href="#">Бра и настенные светильники</a><a class="header__dropdown-link" href="#">Настольные лампы</a><a class="header__dropdown-link" href="#">Торшеры</a><a class="header__dropdown-link" href="#">Подсветка</a><a class="header__dropdown-link" href="#">Декоративные элементы</a><a class="header__dropdown-link" href="#">Зеркала</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Коллекции</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Классические коллекции</a><a class="header__dropdown-link" href="#">Современные коллекции</a><a class="header__dropdown-link" href="#">Скандинавский стиль</a><a class="header__dropdown-link" href="#">Лофт</a><a class="header__dropdown-link" href="#">Минимализм</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Бренды</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Все бренды</a><a class="header__dropdown-link" href="#">Премиум сегмент</a><a class="header__dropdown-link" href="#">Средний сегмент</a><a class="header__dropdown-link" href="#">Эконом сегмент</a>
+            </div>
+          </div>
+      </nav>
+      <div class="header__inner">
+        <div class="search">
+          <label class="search__wrapper">
+            <div class="search__icon" aria-label="Поиск"><img src="./icons/search.svg"/></div>
+            <input class="search__input" type="text" placeholder="Поиск"/>
+          </label>
+          <div class="search__dropdown">
+            <div class="search__results">
+              <h3 class="search__results-title">Товары:</h3><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-1.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-2.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-3.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__view-all" href="#">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <button class="button button--primary  header__callback-button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+<header class="header-mobile">
+  <div class="header-mobile__wrapper">
+    <button class="header-mobile__menu-button"><span class="header-mobile__menu-button-line"></span></button><a class="header-mobile__logo" href="#"><img src="./images/logo.png" alt="Logo"/></a><a class="header-mobile__phone" href="tel:8-800-775-38-18"><img src="./icons/phone.svg"/></a>
+  </div>
+  <nav class="header-mobile__menu">
+    <div class="header-mobile__menu-categories">
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile__actions"><a class="header-mobile__action" href="#">О нас</a><a class="header-mobile__action" href="#">Покупателям</a><a class="header-mobile__action" href="#">Контакты</a><a class="header-mobile__action" href="#">Салоны</a></div>
+    <div class="header-mobile__footer">
+      <button class="button button--secondary  header-mobile__callback-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+    </div>
+  </nav>
+</header>
+<div class="tabbar">
+  <div class="tabbar__actions">
+    <button class="tabbar__action" id="search-tabbar-open"><img src="./icons/search-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/favorite-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/cart-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/person-mobile.svg"/></button>
+  </div>
+</div>
+<main class="main-page-wrapper">
+  <div class="catalog">
+    <div class="catalog__header">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a>
+        </li>
+        <li class="breadcrumbs__item active"><a class="breadcrumbs__link" href="/">Каталог раздела</a>
+        </li>
+      </ul>
+      <div class="catalog__header-wrapper">
+        <h1 class="catalog__title">Мебель в наличии</h1>
+        <div class="catalog-actions">
+          <div class="catalog-actions__item">Сортировать по:
+            <div class="select" data-value="1">
+              <div class="select__trigger"><span class="select__value">Популярности</span>
+                <div class="select__arrow"><img src="./icons/chevron.svg"/></div>
+              </div>
+              <div class="select__dropdown">
+                <div class="select__option" data-value="1">
+                  <div class="select__status"></div>
+                  <div class="select__label">Популярности</div>
+                </div>
+                <div class="select__option" data-value="2">
+                  <div class="select__status"></div>
+                  <div class="select__label">Алфавиту</div>
+                </div>
+                <div class="select__option" data-value="3">
+                  <div class="select__status"></div>
+                  <div class="select__label">Увеличению цены</div>
+                </div>
+                <div class="select__option" data-value="4">
+                  <div class="select__status"></div>
+                  <div class="select__label">Уменьшению цены</div>
+                </div>
+              </div>
+              <input type="hidden" name="sort" value="1"/>
+            </div>
+          </div>
+          <div class="catalog-actions__item">Вид каталога:
+            <div class="catalog-views">
+              <div class="catalog-views__item" data-view="grid">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="3" height="3"></rect>
+                  <rect x="8" y="1" width="3" height="3"></rect>
+                  <rect x="15" y="1" width="3" height="3"></rect>
+                  <rect x="1" y="8" width="3" height="3"></rect>
+                  <rect x="8" y="8" width="3" height="3"></rect>
+                  <rect x="15" y="8" width="3" height="3"></rect>
+                  <rect x="1" y="15" width="3" height="3"></rect>
+                  <rect x="8" y="15" width="3" height="3"></rect>
+                  <rect x="15" y="15" width="3" height="3"></rect>
+                </svg>
+              </div>
+              <div class="catalog-views__item" data-view="row">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="17" height="3"></rect>
+                  <rect x="1" y="8" width="17" height="3"></rect>
+                  <rect x="1" y="15" width="17" height="3"></rect>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog-category-mobile">
+      <div class="catalog-category-mobile__items"><a class="catalog-category-mobile__item" href="#">Бары и барные стулья</a><a class="catalog-category-mobile__item" href="#">Зеркала</a><a class="catalog-category-mobile__item" href="#">Камины</a><a class="catalog-category-mobile__item" href="#">Часы</a><a class="catalog-category-mobile__item" href="#">Двухместные диваны</a><a class="catalog-category-mobile__item" href="#">Тумбочки</a><a class="catalog-category-mobile__item" href="#">Кровати</a><a class="catalog-category-mobile__item" href="#">Стулья</a><a class="catalog-category-mobile__item" href="#">Трёхместные диваны</a><a class="catalog-category-mobile__item" href="#">Столы</a></div>
+    </div>
+    <div class="catalog__wrapper">
+      <div class="catalog-actions-mobile">
+        <div class="filter-mobile">
+          <button class="filter-mobile__button"><img src="./icons/filter.svg" alt="filter"/></button>
+          <div class="filter-mobile__items">
+            <div class="collapse filter-mobile__item" data-collapse-item="open">
+              <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Цена</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+              <div class="collapse__content">
+                <div class="filter-mobile__item-content">
+                  <div class="filter-mobile__prices">
+                    <div class="filter-mobile__price">От:
+                      <input class="input" type="number" name="lowPrice" placeholder="11 111"/>
+                    </div>
+                    <div class="filter-mobile__price">До:
+                      <input class="input" type="number" name="lowPrice" placeholder="11 111"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-mobile__item">
+              <div class="filter-mobile__checkboxes">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"/>
+                  <div class="checkbox__marker"></div><span class="checkbox__text">В наличии</span><span class="checkbox__count">22</span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"/>
+                  <div class="checkbox__marker"></div><span class="checkbox__text">Под заказ</span><span class="checkbox__count">22</span>
+                </label>
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox"/>
+                  <div class="checkbox__marker"></div><span class="checkbox__text">Скоро в продаже</span><span class="checkbox__count">22</span>
+                </label>
+              </div>
+            </div>
+            <div class="collapse filter-mobile__item" data-collapse-item="open">
+              <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Бренд</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+              <div class="collapse__content">
+                <div class="filter-mobile__item-content">
+                  <div class="filter-mobile__checkboxes">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse filter-mobile__item" data-collapse-item="">
+              <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Стиль</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+              <div class="collapse__content">
+                <div class="filter-mobile__item-content">
+                  <div class="filter-mobile__checkboxes">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse filter-mobile__item" data-collapse-item="">
+              <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Комната</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+              <div class="collapse__content">
+                <div class="filter-mobile__item-content">
+                  <div class="filter-mobile__checkboxes">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="collapse filter-mobile__item" data-collapse-item="">
+              <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Цвет</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+              <div class="collapse__content">
+                <div class="filter-mobile__item-content">
+                  <div class="filter-mobile__checkboxes">
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                    </label>
+                    <label class="checkbox">
+                      <input class="checkbox__input" type="checkbox"/>
+                      <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-mobile__actions">
+              <button class="button button--primary " type="button" aria-label="Показать">Показать</button>
+              <button class="button button--secondary " type="button" aria-label="Сбросить">Сбросить</button>
+            </div>
+          </div>
+        </div>
+        <div class="select" data-value="1">
+          <div class="select__trigger"><span class="select__value">Популярности</span>
+            <div class="select__arrow"><img src="./icons/chevron.svg"/></div>
+          </div>
+          <div class="select__dropdown">
+            <div class="select__option" data-value="1">
+              <div class="select__status"></div>
+              <div class="select__label">Популярности</div>
+            </div>
+            <div class="select__option" data-value="2">
+              <div class="select__status"></div>
+              <div class="select__label">Алфавиту</div>
+            </div>
+            <div class="select__option" data-value="3">
+              <div class="select__status"></div>
+              <div class="select__label">Увеличению цены</div>
+            </div>
+            <div class="select__option" data-value="4">
+              <div class="select__status"></div>
+              <div class="select__label">Уменьшению цены</div>
+            </div>
+          </div>
+          <input type="hidden" name="sort" value="1"/>
+        </div>
+        <!--.catalog-actions__item-->
+        <!--    | Сортировать по:-->
+        <!--    +select({-->
+        <!--        name: 'sort',-->
+        <!--        value: '1',-->
+        <!--        placeholder: 'Популярности',-->
+        <!--        options: [-->
+        <!--            { value: '1', label: 'Популярности' },-->
+        <!--            { value: '2', label: 'Алфавиту' },-->
+        <!--            { value: '3', label: 'Увеличению цены' },-->
+        <!--            { value: '4', label: 'Уменьшению цены' },-->
+        <!--        ]-->
+        <!--    })-->
+        <!--.catalog-actions__item-->
+        <!--    | Вид каталога:-->
+        <!--    include ../views/views-->
+      </div>
+      <div class="catalog-filter">
+        <div class="catalog-filter__items">
+          <div class="collapse catalog-filter__item" data-collapse-item="open">
+            <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Цена</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+            <div class="collapse__content">
+              <div class="catalog-filter__item-content">
+                <div class="catalog-filter__prices">
+                  <div class="catalog-filter__price">От:
+                    <input class="input" type="number" name="lowPrice" placeholder="11 111"/>
+                  </div>
+                  <div class="catalog-filter__price">До:
+                    <input class="input" type="number" name="lowPrice" placeholder="11 111"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter__item">
+            <div class="catalog-filter__checkboxes">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox"/>
+                <div class="checkbox__marker"></div><span class="checkbox__text">В наличии</span><span class="checkbox__count">22</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox"/>
+                <div class="checkbox__marker"></div><span class="checkbox__text">Под заказ</span><span class="checkbox__count">22</span>
+              </label>
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox"/>
+                <div class="checkbox__marker"></div><span class="checkbox__text">Скоро в продаже</span><span class="checkbox__count">22</span>
+              </label>
+            </div>
+          </div>
+          <div class="collapse catalog-filter__item" data-collapse-item="">
+            <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Бренд</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+            <div class="collapse__content">
+              <div class="catalog-filter__item-content">
+                <div class="catalog-filter__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse catalog-filter__item" data-collapse-item="">
+            <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Стиль</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+            <div class="collapse__content">
+              <div class="catalog-filter__item-content">
+                <div class="catalog-filter__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse catalog-filter__item" data-collapse-item="">
+            <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Комната</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+            <div class="collapse__content">
+              <div class="catalog-filter__item-content">
+                <div class="catalog-filter__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse catalog-filter__item" data-collapse-item="">
+            <div class="collapse__header" tabindex="0" role="button"><span class="collapse__title">Цвет</span><span class="collapse__icon"><img src="./icons/chevron.svg"/></span></div>
+            <div class="collapse__content">
+              <div class="catalog-filter__item-content">
+                <div class="catalog-filter__checkboxes">
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Michael Amini</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Ashley Home Store</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Grand Manor</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Hooker Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Coaster Fine Furniture</span><span class="checkbox__count">22</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox__input" type="checkbox"/>
+                    <div class="checkbox__marker"></div><span class="checkbox__text">Emerald Home</span><span class="checkbox__count">22</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-filter__actions">
+            <button class="button button--primary " type="button" aria-label="Показать">Показать</button>
+            <button class="button button--secondary " type="button" aria-label="Сбросить">Сбросить</button>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-list catalog-list--row">
+        <div class="catalog-category">
+          <div class="catalog-category__items"><a class="catalog-category__item" href="#">Бары и барные стулья</a><a class="catalog-category__item" href="#">Зеркала</a><a class="catalog-category__item" href="#">Камины</a><a class="catalog-category__item" href="#">Часы</a><a class="catalog-category__item" href="#">Двухместные диваны</a><a class="catalog-category__item" href="#">Тумбочки</a><a class="catalog-category__item" href="#">Кровати</a><a class="catalog-category__item" href="#">Стулья</a><a class="catalog-category__item" href="#">Трёхместные диваны</a><a class="catalog-category__item" href="#">Столы</a></div>
+        </div>
+        <div class="catalog-list__items"><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="https://static.vecteezy.com/system/resources/thumbnails/048/719/069/small/wooden-chair-on-transparent-background-free-png.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>111111</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>222222</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__container"><a class="footer__logo" href=""> <img src="./images/logo.png" alt="Logo"/></a>
+    <div class="footer__content">
+      <div class="footer__column">
+        <h3 class="footer__title">Контакты</h3>
+        <div class="footer__contacts"><a class="footer__phone" href="tel:88007753818">8 (800) 775-38-18 - Колл-центр</a><a class="footer__phone" href="tel:84951820105">8 (495) 182-01-05 - ЦДиИ Экспострой</a><a class="footer__phone" href="tel:84951820006">8 (495) 182-00-06  - МТК Гранд</a><a class="footer__phone" href="tel:84951822722">8 (495) 182-27-22 - ТК Три Кита</a></div>
+        <div class="footer__additional-contacts"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+          <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+        </div>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Каталог</h3>
+        <nav class="footer__nav"><a href="#">СПАЛЬНЯ</a><a href="#">СТОЛОВАЯ</a><a href="#">ГОСТИНАЯ</a><a href="#">ДОМАШНИЙ ОФИС</a><a href="#">ОСВЕЩЕНИЕ И ДЕКОР</a><a href="#">КОЛЛЕКЦИИ</a><a href="#">БРЕНДЫ</a></nav>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Информация</h3>
+        <nav class="footer__nav"><a href="#">О НАС</a><a href="#">НАШИ САЛОНЫ</a><a href="#">МЕБЕЛЬ В НАЛИЧИИ</a></nav>
+      </div>
+      <div class="footer__additional-contacts footer__additional-contacts--mobile"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+        <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><a class="footer__privacy" href="#">Политика конфиденциальности и обработки персональных данных.</a>
+      <p class="footer__copyright">2025 © grandmanor.ru - Интернет магазин американской мебели. Все права защищены.</p>
+    </div>
+  </div>
+  <div class="search-mobile">
+    <div class="search-mobile__header">
+      <label class="search-mobile__input-wrapper">
+        <input class="search-mobile__input" type="text" placeholder="Введите запрос"/>
+        <button class="search-mobile__icon" aria-label="Поиск"><img src="./icons/search.svg"/></button>
+      </label>
+      <button class="search-mobile__close" id="search-tabbar-close"><img src="./icons/cross.svg"/></button>
+    </div>
+    <div class="search-mobile__results">
+      <h2 class="search-mobile__results-title">Товары:</h2>
+      <div class="search-mobile__results-items"><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a>
+      </div><a class="search-mobile__more" href="#">Смотреть все</a>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

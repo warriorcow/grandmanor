@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/favicon-D1uWijmY.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/main-6zwK4PkT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-iU-s6E6y.css">
+  </head>
+  <body>
+    
+<!-- Mixins-->
+<header class="header">
+  <div class="header__top">
+    <div class="header__container">
+      <nav class="header__nav"><a href="">О нас</a><a href="">Покупателям</a><a href="">Контакты</a><a href="">Салоны</a></nav><a class="header__logo" href=""><img src="./images/logo.png" alt="Logo"/></a>
+      <div class="header__side"><a class="header__phone" href="tel:8-800-775-38-18">8-800-775-38-18</a>
+        <div class="header__actions"><a href="#"><img src="./icons/favorite.svg" alt="favorite"/></a><a href="#"><img src="./icons/cart.svg"/></a><a href="#"><img src="./icons/person.svg"/></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__container">
+      <nav class="header__menu">
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Спальня</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Кровати</a><a class="header__dropdown-link" href="#">Прикроватные тумбочки</a><a class="header__dropdown-link" href="#">Комоды</a><a class="header__dropdown-link" href="#">Высокие комоды</a><a class="header__dropdown-link" href="#">Туалетные столики</a><a class="header__dropdown-link" href="#">Банкетки</a><a class="header__dropdown-link" href="#">Шкафы</a><a class="header__dropdown-link" href="#">Постельные комплекты и пледы</a><a class="header__dropdown-link" href="#">Аксессуары</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Столовая</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Обеденные столы</a><a class="header__dropdown-link" href="#">Стулья и табуреты</a><a class="header__dropdown-link" href="#">Банкетки для столовой</a><a class="header__dropdown-link" href="#">Буфеты и серванты</a><a class="header__dropdown-link" href="#">Барные стулья</a><a class="header__dropdown-link" href="#">Столовые комплекты</a><a class="header__dropdown-link" href="#">Сервировка</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Гостиная</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Диваны</a><a class="header__dropdown-link" href="#">Кресла</a><a class="header__dropdown-link" href="#">Журнальные столы</a><a class="header__dropdown-link" href="#">Тумбы под ТВ</a><a class="header__dropdown-link" href="#">Комоды для гостиной</a><a class="header__dropdown-link" href="#">Пуфы и банкетки</a><a class="header__dropdown-link" href="#">Текстиль для гостиной</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Домашний офис</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Письменные столы</a><a class="header__dropdown-link" href="#">Офисные кресла</a><a class="header__dropdown-link" href="#">Шкафы для офиса</a><a class="header__dropdown-link" href="#">Полки и стеллажи</a><a class="header__dropdown-link" href="#">Органайзеры</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">освещение и Декор</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Люстры</a><a class="header__dropdown-link" href="#">Бра и настенные светильники</a><a class="header__dropdown-link" href="#">Настольные лампы</a><a class="header__dropdown-link" href="#">Торшеры</a><a class="header__dropdown-link" href="#">Подсветка</a><a class="header__dropdown-link" href="#">Декоративные элементы</a><a class="header__dropdown-link" href="#">Зеркала</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Коллекции</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Классические коллекции</a><a class="header__dropdown-link" href="#">Современные коллекции</a><a class="header__dropdown-link" href="#">Скандинавский стиль</a><a class="header__dropdown-link" href="#">Лофт</a><a class="header__dropdown-link" href="#">Минимализм</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Бренды</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Все бренды</a><a class="header__dropdown-link" href="#">Премиум сегмент</a><a class="header__dropdown-link" href="#">Средний сегмент</a><a class="header__dropdown-link" href="#">Эконом сегмент</a>
+            </div>
+          </div>
+      </nav>
+      <div class="header__inner">
+        <div class="search">
+          <label class="search__wrapper">
+            <div class="search__icon" aria-label="Поиск"><img src="./icons/search.svg"/></div>
+            <input class="search__input" type="text" placeholder="Поиск"/>
+          </label>
+          <div class="search__dropdown">
+            <div class="search__results">
+              <h3 class="search__results-title">Товары:</h3><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-1.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-2.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-3.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__view-all" href="#">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <button class="button button--primary  header__callback-button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+<header class="header-mobile">
+  <div class="header-mobile__wrapper">
+    <button class="header-mobile__menu-button"><span class="header-mobile__menu-button-line"></span></button><a class="header-mobile__logo" href="#"><img src="./images/logo.png" alt="Logo"/></a><a class="header-mobile__phone" href="tel:8-800-775-38-18"><img src="./icons/phone.svg"/></a>
+  </div>
+  <nav class="header-mobile__menu">
+    <div class="header-mobile__menu-categories">
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile__actions"><a class="header-mobile__action" href="#">О нас</a><a class="header-mobile__action" href="#">Покупателям</a><a class="header-mobile__action" href="#">Контакты</a><a class="header-mobile__action" href="#">Салоны</a></div>
+    <div class="header-mobile__footer">
+      <button class="button button--secondary  header-mobile__callback-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+    </div>
+  </nav>
+</header>
+<div class="tabbar">
+  <div class="tabbar__actions">
+    <button class="tabbar__action" id="search-tabbar-open"><img src="./icons/search-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/favorite-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/cart-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/person-mobile.svg"/></button>
+  </div>
+</div>
+<main class="main-page-wrapper">
+  <div class="product">
+    <div class="product__hero">
+      <div class="product__hero-inner">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Гостиная</a>
+          </li>
+          <li class="breadcrumbs__item active"><a class="breadcrumbs__link" href="#">Столики</a>
+          </li>
+        </ul>
+        <div class="product__brand"><img class="product__brand-logo" src="./images/brand.png" alt="Hooker Furniture"/></div>
+        <div class="product__card">
+          <div class="product__gallery">
+            <div class="product__gallery-stage">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="product__gallery-link" href="./images/slider-1.png" data-fancybox="product-gallery"><img class="product__gallery-img" src="./images/slider-1.png" alt="Фото товара"/></a></div>
+                  <div class="swiper-slide"><a class="product__gallery-link" href="./images/slider-1.png" data-fancybox="product-gallery"><img class="product__gallery-img" src="./images/slider-1.png" alt="Фото товара"/></a></div>
+                  <div class="swiper-slide"><a class="product__gallery-link" href="./images/slider-1.png" data-fancybox="product-gallery"><img class="product__gallery-img" src="./images/slider-1.png" alt="Фото товара"/></a></div>
+                  <div class="swiper-slide"><a class="product__gallery-link" href="./images/slider-1.png" data-fancybox="product-gallery"><img class="product__gallery-img" src="./images/slider-1.png" alt="Фото товара"/></a></div>
+                  <div class="swiper-slide"><a class="product__gallery-link" href="./images/slider-1.png" data-fancybox="product-gallery"><img class="product__gallery-img" src="./images/slider-1.png" alt="Фото товара"/></a></div>
+                </div>
+              </div>
+              <div class="product__gallery-overlay">
+                <div class="product__tags">
+                  <div class="product__tag product__tag--sale">Скидка 20%</div>
+                  <div class="product__tag product__tag--available">В наличии</div>
+                </div>
+                <button class="product__favorite" type="button" aria-label="В избранное">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke="#8D8D8D" stroke-width="2"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__gallery-controls">
+                <div class="swiper-button-prev product__gallery-prev" aria-label="Предыдущее фото"></div>
+                <div class="swiper-button-next product__gallery-next" aria-label="Следующее фото"></div>
+              </div>
+            </div>
+            <div class="swiper-pagination product__pagination"></div>
+          </div>
+          <div class="product__info">
+            <h1 class="product__title">Название небольшого Кофейного столика Lucia из восьми слов</h1>
+            <div class="product__buy-row">
+              <div class="product__buy-inline-price">
+                <div class="product__price-new"><span class="product__price-amount">55 537</span><span class="product__price-unit"> руб.</span></div>
+                <div class="product__price-old">
+                  <del class="product__price-old-amount">110 568</del><span class="product__price-old-unit"> руб.</span>
+                </div>
+              </div>
+              <button class="button button--primary  product__to-cart-mobile" type="button" aria-label="В корзину">В корзину</button>
+            </div>
+            <div class="product__price-box">
+              <div class="product__price-top">
+                <div class="product__price">
+                  <div class="product__price-new"><span class="product__price-amount">55 537</span><span class="product__price-unit"> руб.</span></div>
+                  <div class="product__price-old">
+                    <del class="product__price-old-amount">110 568</del><span class="product__price-old-unit"> руб.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product__buy-form">
+                <p class="product__buy-heading">Купить в один клик</p>
+                <div class="product__buy-field">
+                  <label class="product__buy-label" for="buy-name">Имя</label>
+                  <input class="input is-invalid" type="text" id="buy-name" name="name" autocomplete="given-name"/>
+                </div>
+                <div class="product__buy-field">
+                  <label class="product__buy-label" for="buy-phone">Телефон</label>
+                  <input class="input" type="tel" id="buy-phone" name="phone" autocomplete="tel"/>
+                </div>
+                <button class="button button--secondary  product__buy-submit" type="button" aria-label="Купить">Купить</button>
+                <label class="checkbox is-invalid product__buy-agree">
+                  <input class="checkbox__input" type="checkbox"/>
+                  <div class="checkbox__marker"></div>
+                  <p class="product__buy-agree-text">Нажимая на кнопку "Купить", я принимаю&nbsp;<a class="product__buy-agree-link" href="#">условия политики конфиденциальности и обработки персональных данных.</a></p>
+                </label>
+              </div>
+            </div>
+            <div class="product__info-body">
+              <div class="product__details">
+                <div class="product__sizes">
+                  <button class="product__size is-active" type="button">Размер 1</button>
+                  <button class="product__size" type="button">Размер 2</button>
+                </div>
+                <dl class="product__specs">
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Артикул</dt>
+                    <dd class="product__specs-desc">123456</dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Коллекция</dt>
+                    <dd class="product__specs-desc"><a class="product__specs-link" href="#">Summer</a></dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Производитель</dt>
+                    <dd class="product__specs-desc"><a class="product__specs-link" href="#">Hooker</a></dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Габариты (см)</dt>
+                    <dd class="product__specs-desc">90*90*90
+                      <div class="popover"><img class="popover__trigger" src="./icons/question.svg" alt="Подробнее"/>
+                        <div class="popover__content">длина/ширина/высота</div>
+                      </div>
+                    </dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Вес (кг)</dt>
+                    <dd class="product__specs-desc">100</dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Объем (м<sup>3</sup>)</dt>
+                    <dd class="product__specs-desc">2</dd>
+                  </div>
+                  <div class="product__specs-row">
+                    <dt class="product__specs-term">Страна бренда</dt>
+                    <dd class="product__specs-desc">США</dd>
+                  </div>
+                </dl>
+                <button class="button button--primary  product__to-cart" type="button" aria-label="В корзину">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="product__description">
+            <p class="product__description-text">Описание товара, состоящее из нескольких кратких, но ёмких предложений, помогающих потенциальному клиенту как можно лучше ознакомиться с предметом, дабы закрыть возможные вопросы и убрать сомнения, возникающие при выборе.</p>
+            <div class="product__brand"><img class="product__brand-logo" src="./images/brand.png" alt="Hooker Furniture"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__collection">
+      <div class="product__collection-inner">
+        <div class="product__section-head">
+          <h2 class="product__section-title">Также из коллекции "Summer"</h2>
+          <div class="product__section-nav">
+            <button class="product__col-prev" type="button" aria-label="Предыдущий">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12L16 20L24 28" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="product__col-next" type="button" aria-label="Следующий">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12L24 20L16 28" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="swiper product__col-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+            <div class="swiper-slide"><a class="product-card" href="/product" aria-label="Название предмета">
+                <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+                  <div class="product-card__actions">
+                    <div class="product-card__tags">
+                    </div>
+                    <div class="product-card__buttons">
+                      <button class="product-card__button product-card__button-favorite">
+                        <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-card__body">
+                  <div class="product-card__name">Название предмета</div>
+                  <table class="product-card__chars">
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Производитель</td>
+                      <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Габариты (см)</td>
+                      <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Артикул</td>
+                      <td class="product-card__chars-value">123456</td>
+                    </tr>
+                    <tr class="product-card__chars-row">
+                      <td class="product-card__chars-name">Коллекция</td>
+                      <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="product-card__footer">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                  <div class="product-card__price">
+                    <div class="product-card__price-default"><span>55537</span> руб.</div>
+                    <div class="product-card__price-old">
+                      <del>110568</del> руб.
+                    </div>
+                  </div>
+                </div>
+                <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product__related">
+      <div class="product__related-inner">
+        <h2 class="product__related-title">Смотрите также (258)</h2>
+        <div class="product__related-grid"><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a><a class="product-card" href="/product" aria-label="Название предмета">
+            <div class="product-card__top"><img class="product-card__image" src="./images/category.png"/>
+              <div class="product-card__actions">
+                <div class="product-card__tags">
+                  <div class="product-card__tag product-card__tag-sale">Скидка 20%</div>
+                  <div class="product-card__tag product-card__tag-available">В наличии</div>
+                </div>
+                <div class="product-card__buttons">
+                  <button class="product-card__button product-card__button-favorite">
+                    <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__name">Название предмета</div>
+              <table class="product-card__chars">
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Производитель</td>
+                  <td class="product-card__chars-value"><a href="#">Hooker</a></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Габариты (см)</td>
+                  <td class="product-card__chars-value">90*90*90<img class="product-card__tip" title="Размеры" src="./icons/question.svg"/></td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Артикул</td>
+                  <td class="product-card__chars-value">123456</td>
+                </tr>
+                <tr class="product-card__chars-row">
+                  <td class="product-card__chars-name">Коллекция</td>
+                  <td class="product-card__chars-value"><a href="#">Summer</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-card__footer">
+              <button class="product-card__button product-card__button-favorite">
+                <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.19242 16.2261L13.3153 23.8567C13.6397 24.1614 13.8019 24.3138 14 24.3138C14.198 24.3138 14.3602 24.1614 14.6846 23.8567L22.8075 16.2261C25.0897 14.0822 25.3669 10.5542 23.4474 8.08025L23.0865 7.61507C20.7903 4.65552 16.1812 5.15185 14.5677 8.53243C14.3398 9.00996 13.6601 9.00996 13.4322 8.53243C11.8187 5.15185 7.20964 4.65551 4.91343 7.61507L4.55251 8.08025C2.63307 10.5542 2.91021 14.0822 5.19242 16.2261Z" stroke-width="2"></path>
+                </svg>
+              </button>
+              <div class="product-card__price">
+                <div class="product-card__price-default"><span>55537</span> руб.</div>
+                <div class="product-card__price-old">
+                  <del>110568</del> руб.
+                </div>
+              </div>
+            </div>
+            <button class="button button--primary  product-card__buy" type="button" aria-label="В корзину">В корзину</button></a>
+        </div>
+        <div class="product__related-more"><span class="product__related-count">8 из 258</span>
+          <button class="button button--primary  product__show-more" type="button" aria-label="Показать ещё">Показать ещё</button>
+        </div>
+      </div>
+    </div>
+    <div class="seo-text">
+      <h2 class="seo-text__title">Интернет-магазин<br/>Американской мебели</h2>
+      <div class="seo-text__text">Интернет-магазин «Grand Manor», предлагает вниманию покупателей купить элитную премиум мебель из цельного дерева (массива). На сегодняшний день для наших клиентов доступны многие мебельные бренды из Америки. Наша компания, которая находится в Москве, может доставить любой американский мебельный бренд, поэтому продукция в каталоге обновляется.</div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__container"><a class="footer__logo" href=""> <img src="./images/logo.png" alt="Logo"/></a>
+    <div class="footer__content">
+      <div class="footer__column">
+        <h3 class="footer__title">Контакты</h3>
+        <div class="footer__contacts"><a class="footer__phone" href="tel:88007753818">8 (800) 775-38-18 - Колл-центр</a><a class="footer__phone" href="tel:84951820105">8 (495) 182-01-05 - ЦДиИ Экспострой</a><a class="footer__phone" href="tel:84951820006">8 (495) 182-00-06  - МТК Гранд</a><a class="footer__phone" href="tel:84951822722">8 (495) 182-27-22 - ТК Три Кита</a></div>
+        <div class="footer__additional-contacts"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+          <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+        </div>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Каталог</h3>
+        <nav class="footer__nav"><a href="#">СПАЛЬНЯ</a><a href="#">СТОЛОВАЯ</a><a href="#">ГОСТИНАЯ</a><a href="#">ДОМАШНИЙ ОФИС</a><a href="#">ОСВЕЩЕНИЕ И ДЕКОР</a><a href="#">КОЛЛЕКЦИИ</a><a href="#">БРЕНДЫ</a></nav>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Информация</h3>
+        <nav class="footer__nav"><a href="#">О НАС</a><a href="#">НАШИ САЛОНЫ</a><a href="#">МЕБЕЛЬ В НАЛИЧИИ</a></nav>
+      </div>
+      <div class="footer__additional-contacts footer__additional-contacts--mobile"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+        <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><a class="footer__privacy" href="#">Политика конфиденциальности и обработки персональных данных.</a>
+      <p class="footer__copyright">2025 © grandmanor.ru - Интернет магазин американской мебели. Все права защищены.</p>
+    </div>
+  </div>
+  <div class="search-mobile">
+    <div class="search-mobile__header">
+      <label class="search-mobile__input-wrapper">
+        <input class="search-mobile__input" type="text" placeholder="Введите запрос"/>
+        <button class="search-mobile__icon" aria-label="Поиск"><img src="./icons/search.svg"/></button>
+      </label>
+      <button class="search-mobile__close" id="search-tabbar-close"><img src="./icons/cross.svg"/></button>
+    </div>
+    <div class="search-mobile__results">
+      <h2 class="search-mobile__results-title">Товары:</h2>
+      <div class="search-mobile__results-items"><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a>
+      </div><a class="search-mobile__more" href="#">Смотреть все</a>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

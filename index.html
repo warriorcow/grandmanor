@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pug + SCSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/favicon-D1uWijmY.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/main-6zwK4PkT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-iU-s6E6y.css">
+  </head>
+  <body>
+    
+<!-- Mixins-->
+<header class="header">
+  <div class="header__top">
+    <div class="header__container">
+      <nav class="header__nav"><a href="">О нас</a><a href="">Покупателям</a><a href="">Контакты</a><a href="">Салоны</a></nav><a class="header__logo" href=""><img src="./images/logo.png" alt="Logo"/></a>
+      <div class="header__side"><a class="header__phone" href="tel:8-800-775-38-18">8-800-775-38-18</a>
+        <div class="header__actions"><a href="#"><img src="./icons/favorite.svg" alt="favorite"/></a><a href="#"><img src="./icons/cart.svg"/></a><a href="#"><img src="./icons/person.svg"/></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__container">
+      <nav class="header__menu">
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Спальня</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Кровати</a><a class="header__dropdown-link" href="#">Прикроватные тумбочки</a><a class="header__dropdown-link" href="#">Комоды</a><a class="header__dropdown-link" href="#">Высокие комоды</a><a class="header__dropdown-link" href="#">Туалетные столики</a><a class="header__dropdown-link" href="#">Банкетки</a><a class="header__dropdown-link" href="#">Шкафы</a><a class="header__dropdown-link" href="#">Постельные комплекты и пледы</a><a class="header__dropdown-link" href="#">Аксессуары</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Столовая</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Обеденные столы</a><a class="header__dropdown-link" href="#">Стулья и табуреты</a><a class="header__dropdown-link" href="#">Банкетки для столовой</a><a class="header__dropdown-link" href="#">Буфеты и серванты</a><a class="header__dropdown-link" href="#">Барные стулья</a><a class="header__dropdown-link" href="#">Столовые комплекты</a><a class="header__dropdown-link" href="#">Сервировка</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Гостиная</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Диваны</a><a class="header__dropdown-link" href="#">Кресла</a><a class="header__dropdown-link" href="#">Журнальные столы</a><a class="header__dropdown-link" href="#">Тумбы под ТВ</a><a class="header__dropdown-link" href="#">Комоды для гостиной</a><a class="header__dropdown-link" href="#">Пуфы и банкетки</a><a class="header__dropdown-link" href="#">Текстиль для гостиной</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Домашний офис</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Письменные столы</a><a class="header__dropdown-link" href="#">Офисные кресла</a><a class="header__dropdown-link" href="#">Шкафы для офиса</a><a class="header__dropdown-link" href="#">Полки и стеллажи</a><a class="header__dropdown-link" href="#">Органайзеры</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">освещение и Декор</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Люстры</a><a class="header__dropdown-link" href="#">Бра и настенные светильники</a><a class="header__dropdown-link" href="#">Настольные лампы</a><a class="header__dropdown-link" href="#">Торшеры</a><a class="header__dropdown-link" href="#">Подсветка</a><a class="header__dropdown-link" href="#">Декоративные элементы</a><a class="header__dropdown-link" href="#">Зеркала</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Коллекции</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Классические коллекции</a><a class="header__dropdown-link" href="#">Современные коллекции</a><a class="header__dropdown-link" href="#">Скандинавский стиль</a><a class="header__dropdown-link" href="#">Лофт</a><a class="header__dropdown-link" href="#">Минимализм</a>
+            </div>
+          </div>
+          <div class="header__menu-item"><a class="header__menu-link" href="#">Бренды</a>
+            <div class="header__dropdown"><a class="header__dropdown-link" href="#">Все бренды</a><a class="header__dropdown-link" href="#">Премиум сегмент</a><a class="header__dropdown-link" href="#">Средний сегмент</a><a class="header__dropdown-link" href="#">Эконом сегмент</a>
+            </div>
+          </div>
+      </nav>
+      <div class="header__inner">
+        <div class="search">
+          <label class="search__wrapper">
+            <div class="search__icon" aria-label="Поиск"><img src="./icons/search.svg"/></div>
+            <input class="search__input" type="text" placeholder="Поиск"/>
+          </label>
+          <div class="search__dropdown">
+            <div class="search__results">
+              <h3 class="search__results-title">Товары:</h3><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-1.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-2.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__item" href="#">
+                <div class="search__item-image"><img src="./images/furniture-3.jpg" alt="Название предмета мебели"/></div>
+                <div class="search__item-info">
+                  <h4 class="search__item-name">Название предмета мебели</h4>
+                  <div class="search__item-price"><span class="search__price-value">55 537</span><span class="search__price-currency">руб.</span></div>
+                </div></a><a class="search__view-all" href="#">Смотреть все</a>
+            </div>
+          </div>
+        </div>
+        <button class="button button--primary  header__callback-button" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</header>
+<header class="header-mobile">
+  <div class="header-mobile__wrapper">
+    <button class="header-mobile__menu-button"><span class="header-mobile__menu-button-line"></span></button><a class="header-mobile__logo" href="#"><img src="./images/logo.png" alt="Logo"/></a><a class="header-mobile__phone" href="tel:8-800-775-38-18"><img src="./icons/phone.svg"/></a>
+  </div>
+  <nav class="header-mobile__menu">
+    <div class="header-mobile__menu-categories">
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+          <button class="header-mobile__menu-category-button"><img src="./icons/chevron.svg"/></button>
+        </div>
+        <ul class="header-mobile__menu-subcategory">
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+          <li class="header-mobile__menu-subcategory-item"><a href="#">Кровати</a></li>
+        </ul>
+      </div>
+      <div class="header-mobile__menu-category">
+        <div class="header-mobile__menu-category-wrapper"><a class="header-mobile__menu-category-link" href="#">Спальня</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-mobile__actions"><a class="header-mobile__action" href="#">О нас</a><a class="header-mobile__action" href="#">Покупателям</a><a class="header-mobile__action" href="#">Контакты</a><a class="header-mobile__action" href="#">Салоны</a></div>
+    <div class="header-mobile__footer">
+      <button class="button button--secondary  header-mobile__callback-btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+    </div>
+  </nav>
+</header>
+<div class="tabbar">
+  <div class="tabbar__actions">
+    <button class="tabbar__action" id="search-tabbar-open"><img src="./icons/search-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/favorite-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/cart-mobile.svg"/></button>
+    <button class="tabbar__action"><img src="./icons/person-mobile.svg"/></button>
+  </div>
+</div>
+<main class="main-page-wrapper">
+  <section class="slider">
+    <div class="swiper slider__swiper">
+      <div class="swiper-wrapper slider__wrapper">
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><a href="#"><img class="slider__image" src="./images/slider-1.png" alt="Гостиная"/></a></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><a href="#"><img class="slider__image" src="./images/slider-1.png" alt="Спальня"/></a></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><a href="#"><img class="slider__image" src="./images/slider-1.png" alt="Столовая"/></a></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><a href="#"><img class="slider__image" src="./images/slider-1.png" alt="Кабинет"/></a></div>
+        </div>
+        <div class="swiper-slide slider__slide">
+          <div class="slider__image-container"><a href="#"><img class="slider__image" src="./images/slider-1.png" alt="Декор"/></a></div>
+        </div>
+      </div>
+      <!-- Навигационные стрелки-->
+      <div class="slider__nav">
+        <div class="swiper-button-prev slider__button-prev"></div>
+        <div class="swiper-button-next slider__button-next"></div>
+      </div>
+      <!-- Пагинация-->
+      <div class="swiper-pagination slider__pagination"></div>
+    </div>
+  </section>
+  <div class="main-category"><a class="main-category__item" href="#">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div></a><a class="main-category__item" href="#">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div></a><a class="main-category__item" href="#">
+      <div class="main-category__item-title">Свадебные</div>
+      <div class="main-category__item-img"><img src="./images/slider-1.png"/></div></a>
+  </div>
+  <div class="main-catalog"><a class="main-catalog__item" href="#">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div></a><a class="main-catalog__item" href="#">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div></a><a class="main-catalog__item" href="#">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div></a><a class="main-catalog__item" href="#">
+      <div class="main-catalog__item-bg"><img src="./images/category.png"/></div>
+      <div class="main-catalog__item-title">Спальня</div></a>
+  </div>
+  <div class="promotion">
+    <div class="promotion__video">
+      <div class="promotion__cover"><img src="./images/slider-1.png" alt="Видео"/>
+        <button class="promotion__play-button">▶</button>
+      </div>
+      <iframe class="promotion__iframe" src="https://www.youtube.com/embed/hLQl3WQQoQ0?si=pdgaH3bCdZECSu2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <div class="promotion__content">
+      <div class="promotion__title">Секретная<br/>скидка</div>
+      <div class="promotion__subtitle">Дарим особые условия на&nbsp;покупку</div><a class="button button--primary  promotion__button" href="#" aria-label="Узнать подробнее">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="brands">
+    <div class="brands__row">
+      <h2 class="brands__title">Наши бренды</h2>
+    </div>
+    <div class="brands__logos">
+      <div class="brands__row">
+        <div class="brands__logos-wrap"><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a><a class="brands__logo" href="#"><img src="./images/brand.png" alt="Logo"/></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="seo-text">
+    <h2 class="seo-text__title">Интернет-магазин<br/>Американской мебели</h2>
+    <div class="seo-text__text">Интернет-магазин «Grand Manor», предлагает вниманию покупателей купить элитную премиум мебель из цельного дерева (массива). На сегодняшний день для наших клиентов доступны многие мебельные бренды из Америки. Наша компания, которая находится в Москве, может доставить любой американский мебельный бренд, поэтому продукция в каталоге обновляется.</div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__container"><a class="footer__logo" href=""> <img src="./images/logo.png" alt="Logo"/></a>
+    <div class="footer__content">
+      <div class="footer__column">
+        <h3 class="footer__title">Контакты</h3>
+        <div class="footer__contacts"><a class="footer__phone" href="tel:88007753818">8 (800) 775-38-18 - Колл-центр</a><a class="footer__phone" href="tel:84951820105">8 (495) 182-01-05 - ЦДиИ Экспострой</a><a class="footer__phone" href="tel:84951820006">8 (495) 182-00-06  - МТК Гранд</a><a class="footer__phone" href="tel:84951822722">8 (495) 182-27-22 - ТК Три Кита</a></div>
+        <div class="footer__additional-contacts"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+          <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+        </div>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Каталог</h3>
+        <nav class="footer__nav"><a href="#">СПАЛЬНЯ</a><a href="#">СТОЛОВАЯ</a><a href="#">ГОСТИНАЯ</a><a href="#">ДОМАШНИЙ ОФИС</a><a href="#">ОСВЕЩЕНИЕ И ДЕКОР</a><a href="#">КОЛЛЕКЦИИ</a><a href="#">БРЕНДЫ</a></nav>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Информация</h3>
+        <nav class="footer__nav"><a href="#">О НАС</a><a href="#">НАШИ САЛОНЫ</a><a href="#">МЕБЕЛЬ В НАЛИЧИИ</a></nav>
+      </div>
+      <div class="footer__additional-contacts footer__additional-contacts--mobile"><a class="footer__email" href="mailto:info@grandmanor.ru">info@grandmanor.ru</a>
+        <div class="footer__social"><a href="#" aria-label="Telegram"><img src="./icons/telegram.svg"/></a><a href="#" aria-label="VKontakte"><img src="./icons/vkontakte.svg"/></a><a href="#" aria-label="WhatsApp"><img src="./icons/whatsapp.svg"/></a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><a class="footer__privacy" href="#">Политика конфиденциальности и обработки персональных данных.</a>
+      <p class="footer__copyright">2025 © grandmanor.ru - Интернет магазин американской мебели. Все права защищены.</p>
+    </div>
+  </div>
+  <div class="search-mobile">
+    <div class="search-mobile__header">
+      <label class="search-mobile__input-wrapper">
+        <input class="search-mobile__input" type="text" placeholder="Введите запрос"/>
+        <button class="search-mobile__icon" aria-label="Поиск"><img src="./icons/search.svg"/></button>
+      </label>
+      <button class="search-mobile__close" id="search-tabbar-close"><img src="./icons/cross.svg"/></button>
+    </div>
+    <div class="search-mobile__results">
+      <h2 class="search-mobile__results-title">Товары:</h2>
+      <div class="search-mobile__results-items"><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a><a class="search-mobile__results-item" href="#">
+          <div class="search-mobile__results-item-image"><img src="./images/slider-1.png" alt="Название предмета мебели"/></div>
+          <div class="search-mobile__results-item-info">
+            <h3 class="search-mobile__results-item-title">Название предмета мебели</h3>
+            <div class="search-mobile__results-item-price">55 537<span class="search-mobile__results-item-currency">руб.</span></div>
+          </div></a>
+      </div><a class="search-mobile__more" href="#">Смотреть все</a>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>
